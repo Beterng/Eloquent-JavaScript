@@ -1,78 +1,78 @@
 {{meta {load_files: ["code/intro.js"]}}}
 
-# Introduction
+# Giới Thiệu
 
 {{quote {author: "Ellen Ullman", title: "Close to the Machine: Technophilia and Its Discontents", chapter: true}
 
-Chúng ta thường nghĩ chúng ta có thể tạo một hệ thống máy tính riêng cho mục đích riêng và tin rằng bản thân chính mình đang tạo ra nó dưới bức tranh đa màu ... Nhưng máy tính lại không giống chúng ta. Điều đó là một sự phản chiếu nhỏ trong một phần nhỏ vấn để chúng ta đang đối mặt: và được phản ánh qua sự logic, các trật tự, cũng như những quy tắc, và sự minh bạch chính xác cao.
+Chúng ta thường nghĩ có thể tạo ra hệ thống có mục đích riêng và tin rằng nó được tạo dựa trên hình ảnh của chính bản thân... Nhưng máy tính thì không như vậy. Nó chỉ phản chiếu lại một phần rất nhỏ trong chúng ta: sự logic, các trật tự, quy tắc và sự minh bạch.
 
 quote}}
 
-{{figure {url: "img/chapter_picture_00.jpg", alt: "Illustration of a screwdriver next to a circuit board of about the same size", chapter: "framed"}}}
+{{figure {url: "img/chapter_picture_00.jpg", alt: "Hình minh họa chiếc tua vít bên cạnh bảng mạch có cùng kích thước", chapter: "framed"}}}
 
-This is a book about instructing ((computer))s. Computers are about as common as screwdrivers today, but they are quite a bit more complex, and making them do what you want them to do isn't always easy.
+Cuốn sách này là về việc ra lệnh cho ((máy tính)). Máy tính hiện nay phổ biến không khác gì tua vít vậy, nhưng nó có phần phức tạp hơn, và điều khiển chúng làm theo ý mình không phải lúc nào cũng dễ.
 
-If the task you have for your computer is a common, well-understood one, such as showing you your email or acting like a calculator, you can open the appropriate ((application)) and get to work. But for unique or open-ended tasks, there often is no appropriate application.
+Nếu nhiệm vụ bạn giao cho máy tính là một công việc thông thường, dễ hiểu, ví dụ như hiển thị email hoặc làm một chiếc máy tính cầm tay, bạn chỉ cần mở ((ứng dụng)) thích hợp và vào việc. Nhưng đối với các nhiệm vụ đặc biệt hoặc không có kết thúc rõ ràng, thì thường không có các ứng dụng thích hợp như vậy.
 
-That is where ((programming)) may come in. _Programming_ is the act of constructing a _program_—a set of precise instructions telling a computer what to do. Because computers are dumb, pedantic beasts, programming is fundamentally tedious and frustrating.
+Đó là lúc ((lập trình)) xuất hiện. _Lập trình_ là hành động xây dựng _chương trình_-một tập hợp các hướng dẫn chính xác cho máy tính biết phải làm gì. Bởi vì máy tính là con quái vật vừa dỏm vừa ngốc nghếch, việc lập trình về cơ bản là tẻ nhạt và khó chịu.
 
 {{index [programming, "joy of"], speed}}
 
-Fortunately, if you can get over that fact—and maybe even enjoy the rigor of thinking in terms that dumb machines can deal with—programming can be rewarding. It allows you to do things in seconds that would take _forever_ by hand. It is a way to make your computer tool do things that it couldn't do before. On top of that, it makes for a wonderful game of puzzle solving and abstract thinking.
+May mắn thay, nếu bạn có thể vượt qua thực tế đó—và thậm chí có thể tận hưởng sự nghiêm túc trong suy nghĩ mà những cỗ máy ngu ngốc có thể xử lý—thì việc lập trình có thể rất bổ ích. Nó cho phép bạn thực hiện mọi việc trong vài giây mà có thể mất _mãi mãi_ bằng tay. Đó là một cách để làm cho công cụ máy tính của bạn làm được những việc mà trước đây nó không thể làm được. Trên hết, nó tạo nên một trò chơi tuyệt vời về giải câu đố và tư duy trừu tượng.
 
-Most programming is done with ((programming language))s. A _programming language_ is an artificially constructed language used to instruct computers. It is interesting that the most effective way we've found to communicate with a computer borrows so heavily from the way we communicate with each other. Like human languages, computer languages allow words and phrases to be combined in new ways, making it possible to express ever new concepts.
+Hầu hết việc lập trình được thực hiện bằng ((ngôn ngữ lập trình)). _Ngôn ngữ lập trình_ là ngôn ngữ được con người xây dựng dùng để chỉ dẫn máy tính. Điều thú vị là cách hiệu quả nhất mà chúng ta tìm ra để giao tiếp với máy tính lại vay mượn rất nhiều từ cách chúng ta giao tiếp với nhau. Giống như ngôn ngữ của con người, ngôn ngữ máy tính cho phép các từ và cụm từ được kết hợp theo những cách mới, giúp thể hiện các khái niệm mới hơn.
 
 {{index [JavaScript, "availability of"], "casual computing"}}
 
-At one point, language-based interfaces, such as the BASIC and DOS prompts of the 1980s and 1990s, were the main method of interacting with computers. For routine computer use, these have largely been replaced with visual interfaces, which are easier to learn but offer less freedom. But if you know where to look, the languages are still there. One of them, _JavaScript_, is built into every modern web ((browser))—and is thus available on almost every device.
+Có thời điểm, các giao diện dựa trên ngôn ngữ, chẳng hạn như BASIC và DOS của những năm 1980 và 1990, là phương thức tương tác chính với máy tính. Đối với việc sử dụng máy tính thông thường, những thứ này phần lớn đã được thay thế bằng giao diện trực quan, dễ học hơn nhưng mang lại ít sự tự do hơn. Nhưng nếu bạn biết tìm ở đâu thì các ngôn ngữ vẫn còn đó. Một trong số đó, _JavaScript_, được tích hợp vào mọi ((trình duyệt)) web hiện đại—và do đó có sẵn trên hầu hết mọi thiết bị.
 
 {{indexsee "web browser", browser}}
 
-This book will try to make you familiar enough with this language to do useful and amusing things with it.
+Cuốn sách này sẽ cố gắng giúp bạn làm quen với ngôn ngữ này đủ để làm được những điều hữu ích và thú vị với nó.
 
-## On programming
+## Về việc lập trình
 
 {{index [programming, "difficulty of"]}}
 
-Besides explaining JavaScript, I will introduce the basic principles of programming. Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You're building your own maze, in a way, and you can easily get lost in it.
+Bên cạnh việc giải thích về JavaScript, tôi cũng sẽ giới thiệu thêm về các nguyên tắc lập trình cơ bản. Việc lập trình, hóa ra lại rất khó. Các quy tắc cơ bản thường rất đơn giản và rõ ràng, nhưng các chương trình được xây dựng dựa trên các quy tắc này có xu hướng trở nên phức tạp đến mức phải đưa ra các quy tắc và độ phức tạp của riêng chúng. Theo một cách nào đó, bạn đang xây dựng mê cung của riêng mình và bạn có thể dễ dàng bị lạc trong đó.
 
 {{index learning}}
 
-There will be times when reading this book feels terribly frustrating. If you are new to programming, there will be a lot of new material to digest. Much of this material will then be _combined_ in ways that require you to make additional connections.
+Sẽ có lúc đọc cuốn sách này mà cảm thấy vô cùng bực bội. Nếu bạn là người mới làm quen với lập trình, sẽ có rất nhiều tài liệu mới cần tiếp thu. Phần lớn tài liệu này sau đó sẽ được _kết hợp_ theo những cách đòi hỏi bạn phải tạo thêm các sự liên kết.
 
-It is up to you to make the necessary effort. When you are struggling to follow the book, do not jump to any conclusions about your own capabilities. You are fine—you just need to keep at it. Take a break, reread some material, and make sure you read and understand the example programs and ((exercises)). Learning is hard work, but everything you learn is yours and will make further learning easier.
+Việc nỗ lực khi cần thiết là tùy bạn. Khi bạn đang loay hoay theo đuổi cuốn sách, đừng vội đưa ra bất kỳ kết luận nào về khả năng của bản thân. Bạn ổn-bạn chỉ cần tiếp tục cố gắng. Hãy nghỉ ngơi, đọc lại một số tài liệu và đảm bảo rằng bạn đã đọc và hiểu các chương trình ví dụ và ((bài tập)). Học tập là một công việc khó khăn, nhưng mọi thứ bạn học đều là của bạn và sẽ giúp việc học tiếp theo trở nên dễ dàng hơn.
 
 {{quote {author: "Ursula K. Le Guin", title: "The Left Hand of Darkness"}
 
 {{index "Le Guin, Ursula K."}}
 
-When action grows unprofitable, gather information; when information grows unprofitable, sleep.
+Khi hành động không đem lại kết quả, tìm tòi; khi việc tìm tòi không đem lại kết quả, nghỉ ngơi.
 
 quote}}
 
 {{index [program, "nature of"], data}}
 
-A program is many things. It is a piece of text typed by a programmer, it is the directing force that makes the computer do what it does, it is data in the computer's memory, and, at the same time, it controls the actions performed on this memory. Analogies that try to compare programs to familiar objects tend to fall short. A superficially fitting one is to compare a program to a machine—lots of separate parts tend to be involved, and to make the whole thing tick, we have to consider the ways in which these parts interconnect and contribute to the operation of the whole.
+Một chương trình bao gồm rất nhiều thứ. Nó là một đoạn văn bản do lập trình viên gõ ra, nó là tác nhân điều khiển máy tính thực hiện công việc của nó, nó là dữ liệu trong bộ nhớ của máy tính, đồng thời nó điều khiển các hành động thực hiện trên bộ nhớ này. Những sự cố gắng so sánh các chương trình với các đối tượng quen thuộc thường có xu hướng thiếu sót. Một cách phù hợp về hình thức là so sánh một chương trình với một cái máy - rất nhiều bộ phận riêng biệt có xu hướng tham gia và để làm cho tổng thể hoạt động tốt, chúng ta phải xem xét cách thức mà các bộ phận này kết nối với nhau và đóng góp vào hoạt động của tổng thể.
 
-A ((computer)) is a physical machine that acts as a host for these immaterial machines. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high ((speed)). A program can ingeniously combine an enormous number of these simple actions to do very complicated things.
+((Máy tính)) là một cỗ máy vật lý đóng vai trò là chủ thể cho các cỗ máy phi vật chất này. Bản thân máy tính chỉ có thể làm những việc đơn giản một cách ngu ngốc. Lý do chúng rất hữu ích là vì chúng làm những việc này với ((tốc độ)) cực kỳ cao. Một chương trình có thể khéo léo kết hợp một số lượng lớn các hành động đơn giản này để thực hiện những việc rất phức tạp.
 
 {{index [programming, "joy of"]}}
 
-A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands. But as a program grows, so does its ((complexity)). The skill of programming is the skill of building programs that don't confuse the programmer. The best programs are those that manage to do something interesting while still being easy to understand.
+Chương trình là công trình của ý tưởng. Nó không tốn kém để xây dựng, nó nhẹ tênh và dễ dàng phát triển dưới bàn tay đánh máy của chúng ta. Nhưng khi một chương trình phát triển thì ((độ phức tạp)) của nó cũng tăng theo. Kỹ năng lập trình là kỹ năng xây dựng chương trình mà không gây nhầm lẫn cho lập trình viên. Các chương trình tốt nhất là những chương trình có thể làm được điều gì đó thú vị trong khi vẫn dễ hiểu.
 
 {{index "programming style", "best practices"}}
 
-Some programmers believe that this complexity is best managed by using only a small set of well-understood techniques in their programs. They have composed strict rules ("best practices") prescribing the form programs should have and carefully stay within their safe little zone.
+Một số lập trình viên tin rằng sự phức tạp này được quản lý tốt nhất bằng cách chỉ sử dụng một tập hợp nhỏ các kỹ thuật được hiểu rõ trong chương trình của họ. Họ đã soạn thảo các quy tắc nghiêm ngặt ("các thực hành tốt nhất"-"best practices") quy định các hình thức mà chương trình nên có và cẩn thận ở trong vùng an toàn nhỏ của họ.
 
 {{index experiment}}
 
-This is not only boring—it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. There are many terrible mistakes to make in program design, and you should go ahead and make them at least once so that you understand them. A sense of what a good program looks like is developed with practice, not learned from a list of rules.
+Điều này không chỉ nhàm chán-mà lại còn kém hiệu quả. Những vấn đề mới thường đòi hỏi những giải pháp mới. Lĩnh vực lập trình còn non trẻ và vẫn đang phát triển nhanh chóng, đồng thời đủ đa dạng để có chỗ cho những cách tiếp cận cực kỳ khác nhau. Có rất nhiều sai lầm khủng khiếp có thể mắc phải trong quá trình thiết kế chương trình và bạn nên tiếp tục mắc phải chúng ít nhất một lần để hiểu chúng. Cảm giác về một chương trình tốt trông như thế nào được phát triển bằng thực hành chứ không phải học được từ danh sách các quy tắc.
 
-## Why language matters
+## Vì sao ngôn ngữ lại quan trọng
 
 {{index "programming language", "machine code", "binary data"}}
 
-In the beginning, at the birth of computing, there were no programming languages. Programs looked something like this:
+Ban đầu, ở thời kì sơ khai của máy tính, không hề có ngôn ngữ lập trình nào cả. Các chương trình ban đầu trông giống như thế này:
 
 ```{lang: null}
 00110001 00000000 00000000
@@ -88,71 +88,71 @@ In the beginning, at the birth of computing, there were no programming languages
 
 {{index [programming, "history of"], "punch card", complexity}}
 
-This is a program to add the numbers from 1 to 10 together and print the result: `1 + 2 + ... + 10 = 55`. It could run on a simple hypothetical machine. To program early computers, it was necessary to set large arrays of switches in the right position or punch holes in strips of cardboard and feed them to the computer. You can imagine how tedious and error prone this procedure was. Even writing simple programs required much cleverness and discipline. Complex ones were nearly inconceivable.
+Đây là chương trình cộng các số từ 1 đến 10 và in ra kết quả: `1 + 2 + ... + 10 = 55`. Nó có thể chạy trên một máy giả định đơn giản. Để lập trình cho những chiếc máy tính đời đầu, cần phải đặt những dãy công tắc lớn vào đúng vị trí hoặc đục lỗ trên các dải bìa cứng và đưa chúng vào máy tính. Bạn có thể tưởng tượng quy trình này tẻ nhạt và dễ xảy ra lỗi như thế nào. Ngay cả việc viết những chương trình đơn giản cũng đòi hỏi nhiều sự thông minh và kỷ luật. Những cái phức tạp gần như không thể tưởng tượng được.
 
 {{index bit, "wizard (mighty)"}}
 
-Of course, manually entering these arcane patterns of bits (the ones and zeros) did give the programmer a profound sense of being a mighty wizard. And that has to be worth something in terms of job satisfaction.
+Tất nhiên, việc nhập thủ công các mẫu bit phức tạp này (số 1 và số 0) đã mang lại cho lập trình viên cảm giác sâu sắc về việc trở thành một tên phù thủy hùng mạnh. Và điều đó chắc phải có giá trị gì đó xét về mức độ hài lòng trong công việc.
 
 {{index memory, instruction}}
 
-Each line of the previous program contains a single instruction. It could be written in English like this:
+Mỗi dòng của chương trình trước chứa một lệnh duy nhất. Nó có thể được viết bằng tiếng Việt như thế này:
 
- 1. Store the number 0 in memory location 0.
- 2. Store the number 1 in memory location 1.
- 3. Store the value of memory location 1 in memory location 2.
- 4. Subtract the number 11 from the value in memory location 2.
- 5. If the value in memory location 2 is the number 0, continue with instruction 9.
- 6. Add the value of memory location 1 to memory location 0.
- 7. Add the number 1 to the value of memory location 1.
- 8. Continue with instruction 3.
- 9. Output the value of memory location 0.
+ 1. Lưu số 0 vào vị trí 0 trong bộ nhớ.
+ 2. Lưu số 1 vào vị trí 1 trong bộ nhớ.
+ 3. Lưu giá trị của vị trí 1 trong bộ nhớ vào vị trí 2 trong bộ nhớ.
+ 4. Trừ đi 11 khỏi giá trị ở vị tri 2 trong bộ nhớ.
+ 5. Nếu giá trị ở vị trí 2 trong bộ nhớ là số 0, hãy tiếp tục với câu lệnh số 9.
+ 6. Thêm giá trị ở vị trí 1 trong bộ nhớ vào vị trí 0 trong bộ nhớ.
+ 7. Thêm số 1 vào giá trị ở vị trí 1 trong bộ nhớ.
+ 8. Tiếp tục với câu lệnh số 3.
+ 9. Xuất ra giá trị của vị trí 0 trong bộ nhớ.
 
 {{index readability, naming, binding}}
 
-Although that is already more readable than the soup of bits, it is still rather obscure. Using names instead of numbers for the instructions and memory locations helps.
+Mặc dù điều đó đã dễ đọc hơn so với món cháo bit, nhưng nó vẫn còn khá mơ hồ. Việc sử dụng tên thay vì số cho các câu lệnh và vị trí bộ nhớ sẽ giúp ích.
 
 ```{lang: "null"}
-  Set “total” to 0.
-  Set “count” to 1.
-[loop]
-  Set “compare” to “count”.
-  Subtract 11 from “compare”.
-  If “compare” is 0, continue at [end].
-  Add “count” to “total”.
-  Add 1 to “count”.
-  Continue at [loop].
-[end]
-  Output “total”.
+  Đặt “tổng” thành 0.
+  Đặt “sốlượng” thành 1.
+[vònglặp]
+  Đặt “sosánh” thành “sốlượng””.
+  Trừ 11 khỏi “sosánh”.
+  Nếu “sosánh” là 0, tiếptục tại [kếtthúc].
+  Thêm “sốlượng” vào “tổng”.
+  Thêm 1 vào “sốlượng”.
+  Tiếptục tại [vònglặp].
+[kếtthúc]
+  Xuấtra “tổng”.
 ```
 
 {{index loop, jump, "summing example"}}
 
-Can you see how the program works at this point? The first two lines give two memory locations their starting values: `total` will be used to build up the result of the computation, and `count` will keep track of the number that we are currently looking at. The lines using `compare` are probably the most confusing ones. The program wants to see whether `count` is equal to 11 to decide whether it can stop running. Because our hypothetical machine is rather primitive, it can test only whether a number is zero and make a decision based on that. It therefore uses the memory location labeled `compare` to compute the value of `count - 11` and makes a decision based on that value. The next two lines add the value of `count` to the result and increment `count` by 1 every time the program decides that `count` is not 11 yet.
+Bạn có thể thấy chương trình hoạt động như thế nào vào lúc này? Hai dòng đầu tiên cung cấp cho hai vị trí bộ nhớ các giá trị bắt đầu của chúng: `tổng` sẽ được sử dụng để tạo kết quả tính toán và `sốlượng` sẽ theo dõi số mà chúng ta hiện đang xem. Những dòng sử dụng `sosánh` có lẽ là những dòng khó hiểu nhất. Chương trình muốn xem liệu `sốlượng` có bằng 11 hay không để quyết định xem nó có thể ngừng chạy hay không. Bởi vì cỗ máy giả định của chúng ta khá là nguyên thủy nên nó chỉ có thể kiểm tra xem một số có bằng 0 hay không và đưa ra quyết định dựa trên đó. Do đó, nó sử dụng vị trí bộ nhớ có nhãn `sosánh` để tính giá trị của `sốlượng - 11` và đưa ra quyết định dựa trên giá trị đó. Hai dòng tiếp theo thêm giá trị của `sốlượng` vào kết quả và tăng `sốlượng` lên 1 mỗi khi chương trình quyết định rằng `sốlượng` chưa phải là 11.
 
-Here is the same program in JavaScript:
+Đây là chương trình tương tự bằng JavaScript:
 
 ```
-let total = 0, count = 1;
-while (count <= 10) {
-  total += count;
-  count += 1;
+let tong = 0, soluong = 1;
+while (soluong <= 10) {
+  tong += soluong;
+  soluong += 1;
 }
-console.log(total);
+console.log(tong);
 // → 55
 ```
 
 {{index "while loop", loop, [braces, block]}}
 
-This version gives us a few more improvements. Most importantly, there is no need to specify the way we want the program to jump back and forth anymore—the `while` construct takes care of that. It continues executing the block (wrapped in braces) below it as long as the condition it was given holds. That condition is `count <= 10`, which means “the count is less than or equal to 10”. We no longer have to create a temporary value and compare that to zero, which was just an uninteresting detail. Part of the power of programming languages is that they can take care of uninteresting details for us.
+Phiên bản này đem lại cho chúng ta thêm một số cải tiến. Quan trọng nhất, không cần phải chỉ định cách chúng ta muốn chương trình nhảy qua nhảy lại nữa—cấu trúc `while` sẽ đảm nhiệm việc đó. Nó tiếp tục thực thi khối (được bọc trong dấu ngoặc nhọn) bên dưới nó miễn là điều kiện được đưa ra vẫn được giữ nguyên. Điều kiện đó là `count <= 10`, có nghĩa là “số đếm nhỏ hơn hoặc bằng 10”. Chúng ta không còn phải tạo một giá trị tạm thời và so sánh giá trị đó với 0 nữa, đó chỉ là một chi tiết không mấy thú vị. Một phần sức mạnh của ngôn ngữ lập trình là chúng có thể xử lý những chi tiết không thú vị đối với chúng ta.
 
 {{index "console.log"}}
 
-At the end of the program, after the `while` construct has finished, the `console.log` operation is used to write out the result.
+Ở cuối chương trình, sau khi cấu trúc `while` kết thúc, thao tác `console.log` được sử dụng để ghi kết quả.
 
 {{index "sum function", "range function", abstraction, function}}
 
-Finally, here is what the program could look like if we happened to have the convenient operations `range` and `sum` available, which respectively create a ((collection)) of numbers within a range and compute the sum of a collection of numbers:
+Cuối cùng, đây là tổng quan chương trình nếu chúng ta tình cờ có sẵn các phép toán thuận tiện `range`(phạm vi) và `sum`(tổng), tương ứng với việc tạo ra một ((collection)) (tập hợp) các số trong một phạm vi và tính tổng của một tập hợp các số:
 
 ```{startCode: true}
 console.log(sum(range(1, 10)));
@@ -161,13 +161,13 @@ console.log(sum(range(1, 10)));
 
 {{index readability}}
 
-The moral of this story is that the same program can be expressed in both long and short, unreadable and readable ways. The first version of the program was extremely obscure, whereas this last one is almost English: `log` the `sum` of the `range` of numbers from 1 to 10. (We will see in [later chapters](data) how to define operations like `sum` and `range`.)
+Qua đó, cùng một chương trình có thể được diễn đạt theo cả cách dài và ngắn, không thể đọc được và có thể đọc được. Phiên bản đầu tiên của chương trình cực kỳ khó hiểu, trong khi phiên bản cuối cùng này gần như bằng tiếng Anh: ghi tổng của dãy số từ 1 đến 10. (Chúng ta sẽ xem trong [các chương sau](data) cách để xác định các phép toán như tổng và phạm vi.)
 
 {{index ["programming language", "power of"], composability}}
 
-A good programming language helps the programmer by allowing them to talk about the actions that the computer has to perform on a higher level. It helps omit details, provides convenient building blocks (such as `while` and `console.log`), allows you to define your own building blocks (such as `sum` and `range`), and makes those blocks easy to compose.
+Một ngôn ngữ lập trình tốt sẽ giúp lập trình viên bằng cách cho phép họ nói về các hành động mà máy tính phải thực hiện ở ột cấp độ cao hơn. Nó giúp bỏ qua các chi tiết, cung cấp các khối xây dựng thuận tiện (chẳng hạn như `while` và `console.log`), cho phép bạn xác định các khối xây dựng của riêng mình (chẳng hạn như `sum` và `range`) và làm cho các khối đó dễ dàng sắp xếp.
 
-## What is JavaScript?
+## JavaScript là gì?
 
 {{index history, Netscape, browser, "web application", JavaScript, [JavaScript, "history of"], "World Wide Web"}}
 
@@ -175,47 +175,47 @@ A good programming language helps the programmer by allowing them to talk about 
 
 {{indexsee Web, "World Wide Web"}}
 
-JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—that is, applications with which you can interact directly without doing a page reload for every action. JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.
+JavaScript được giới thiệu vào năm 1995 như một cách để thêm chương trình vào các trang web trong trình duyệt Netscape Navigator. Ngôn ngữ này đã được áp dụng bởi tất cả các trình duyệt web đồ họa lớn khác. Nó đã làm cho các ứng dụng web hiện đại trở nên khả thi—tức là các ứng dụng mà bạn có thể tương tác trực tiếp mà không cần tải lại trang cho mọi hành động. JavaScript cũng được sử dụng trong các trang web truyền thống hơn để cung cấp nhiều hình thức tương tác và thông minh khác nhau.
 
 {{index Java, naming}}
 
-It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.
+Điều quan trọng cần lưu ý là JavaScript hầu như không liên quan gì đến ngôn ngữ lập trình có tên Java. Cái tên tương tự được lấy cảm hứng từ những cân nhắc về tiếp thị hơn là sự đánh giá đúng đắn. Khi JavaScript được giới thiệu, ngôn ngữ Java đã được tiếp thị rộng rãi và ngày càng trở nên phổ biến. Có người cho rằng cố gắng tiếp tục thành công này là một ý tưởng hay. Bây giờ chúng ta đang bị mắc kẹt với cái tên này.
 
 {{index ECMAScript, compatibility}}
 
-After its adoption outside of Netscape, a ((standard)) document was written to describe the way the JavaScript language should work so that the various pieces of software that claimed to support JavaScript could make sure they actually provided the same language. This is called the ECMAScript standard, after the Ecma International organization that conducted the standardization. In practice, the terms ECMAScript and JavaScript can be used interchangeably—they are two names for the same language.
+Sau khi được áp dụng bên ngoài Netscape, một tài liệu ((tiêu chuẩn)) đã được viết ra để mô tả cách hoạt động của ngôn ngữ JavaScript để các phần mềm khác nhau tuyên bố hỗ trợ JavaScript có thể đảm bảo rằng chúng thực sự cung cấp cùng một ngôn ngữ. Đây được gọi là tiêu chuẩn ECMAScript, theo tên tổ chức Ecma International tiến hành tiêu chuẩn hóa. Trong thực tế, thuật ngữ ECMAScript và JavaScript có thể được sử dụng thay thế cho nhau—chúng là hai tên cho cùng một ngôn ngữ.
 
 {{index [JavaScript, "weaknesses of"], debugging}}
 
-There are those who will say _terrible_ things about JavaScript. Many of these things are true. When I was required to write something in JavaScript for the first time, I quickly came to despise it. It would accept almost anything I typed but interpret it in a way that was completely different from what I meant. This had a lot to do with the fact that I did not have a clue what I was doing, of course, but there is a real issue here: JavaScript is ridiculously liberal in what it allows. The idea behind this design was that it would make programming in JavaScript easier for beginners. In actuality, it mostly makes finding problems in your programs harder because the system will not point them out to you.
+Có những người sẽ nói những điều _tệ hại_ về JavaScript. Nhiều điều trong số này là sự thật. Khi tôi được yêu cầu viết thứ gì đó bằng JavaScript lần đầu tiên, tôi nhanh chóng coi thường nó. Nó sẽ chấp nhận hầu hết mọi thứ tôi gõ nhưng diễn giải nó theo cách hoàn toàn khác với ý tôi. Tất nhiên, điều này liên quan nhiều đến thực tế là tôi không biết mình đang làm gì, nhưng có một vấn đề thực sự ở đây: JavaScript rất tự do trong những gì nó cho phép. Ý tưởng đằng sau thiết kế này là nó sẽ giúp việc lập trình bằng JavaScript trở nên dễ dàng hơn đối với người mới bắt đầu. Trên thực tế, điều này chủ yếu khiến việc tìm kiếm sự cố trong chương trình của bạn trở nên khó khăn hơn vì hệ thống sẽ không chỉ ra chúng cho bạn.
 
 {{index [JavaScript, "flexibility of"], flexibility}}
 
-This flexibility also has its advantages, though. It leaves room for techniques that are impossible in more rigid languages and makes for a pleasant, informal style of programming. After ((learning)) the language properly and working with it for a while, I have come to actually _like_ JavaScript.
+Tính linh hoạt này cũng có những ưu điểm của nó. Nó nhường chỗ cho những kỹ thuật không thể có trong các ngôn ngữ cứng nhắc hơn và tạo nên một phong cách lập trình thân thiện, dễ chịu. Sau khi ((học)) ngôn ngữ đúng cách và làm việc với nó được một thời gian, tôi thực sự đã đến với việc _thích_ JavaScript.
 
 {{index future, [JavaScript, "versions of"], ECMAScript, "ECMAScript 6"}}
 
-There have been several versions of JavaScript. ECMAScript version 3 was the widely supported version during JavaScript's ascent to dominance, roughly between 2000 and 2010. During this time, work was underway on an ambitious version 4, which planned a number of radical improvements and extensions to the language. Changing a living, widely used language in such a radical way turned out to be politically difficult, and work on version 4 was abandoned in 2008. A much less ambitious version 5, which made only some uncontroversial improvements, came out in 2009. In 2015, version 6 came out, a major update that included some of the ideas planned for version 4. Since then we've had new, small updates every year.
+Đã có một số phiên bản JavaScript. ECMAScript phiên bản 3 là phiên bản được hỗ trợ rộng rãi trong thời kỳ JavaScript vươn lên thống trị, khoảng từ năm 2000 đến năm 2010. Trong thời gian này, các nỗ lực đã được tiến hành trên phiên bản 4 đầy tham vọng, trong đó có kế hoạch thực hiện một số cải tiến và mở rộng căn bản cho ngôn ngữ này. Việc thay đổi một ngôn ngữ sống động, được sử dụng rộng rãi theo cách triệt để như vậy hóa ra lại rất khó khăn và việc phát triển phiên bản 4 đã bị hủy bỏ vào năm 2008. Phiên bản 5 ít tham vọng hơn nhiều, chỉ thực hiện một số cải tiến không gây tranh cãi, đã ra mắt vào năm 2009. Năm 2015, phiên bản 6 đã ra mắt, một bản cập nhật lớn bao gồm một số ý tưởng đã được lên kế hoạch cho phiên bản 4. Kể từ đó, chúng ta đã có những bản cập nhật nhỏ, mới hàng năm.
 
-The fact that JavaScript is evolving means that browsers have to constantly keep up. If you're using an older browser, it may not support every feature. The language designers are careful to not make any changes that could break existing programs, so new browsers can still run old programs. In this book, I'm using the 2024 version of JavaScript.
+Thực tế là JavaScript đang phát triển có nghĩa là các trình duyệt phải liên tục theo kịp. Nếu bạn đang sử dụng trình duyệt cũ hơn, trình duyệt đó có thể không hỗ trợ mọi tính năng. Các nhà thiết kế ngôn ngữ cẩn thận không thực hiện bất kỳ thay đổi nào có thể làm hỏng các chương trình hiện có, vì vậy các trình duyệt mới vẫn có thể chạy các chương trình cũ. Trong cuốn sách này, tôi đang sử dụng phiên bản JavaScript 2024.
 
 {{index [JavaScript, "uses of"]}}
 
-Web browsers are not the only platforms on which JavaScript is used. Some databases, such as MongoDB and CouchDB, use JavaScript as their scripting and query language. Several platforms for desktop and server programming, most notably the ((Node.js)) project (the subject of [Chapter ?](node)), provide an environment for programming JavaScript outside of the browser.
+Trình duyệt web không phải là nền tảng duy nhất sử dụng JavaScript. Một số cơ sở dữ liệu, chẳng hạn như MongoDB và CouchDB, sử dụng JavaScript làm ngôn ngữ truy vấn và tập lệnh. Một số nền tảng dành cho lập trình máy tính để bàn và máy chủ, đáng chú ý nhất là dự án ((Node.js)) (chủ đề của [Chương 20](node)), cung cấp môi trường để lập trình JavaScript bên ngoài trình duyệt.
 
-## Code, and what to do with it
+## Mã lệnh, và phải làm gì với nó
 
 {{index "reading code", "writing code"}}
 
-_Code_ is the text that makes up programs. Most chapters in this book contain quite a lot of code. I believe reading code and writing ((code)) are indispensable parts of ((learning)) to program. Try to not just glance over the examples—read them attentively and understand them. This may be slow and confusing at first, but I promise that you'll quickly get the hang of it. The same goes for the ((exercises)). Don't assume you understand them until you've actually written a working solution.
+_Mã lệnh_ (code) là văn bản tạo nên chương trình. Hầu hết các chương trong cuốn sách này đều chứa khá nhiều mã. Tôi tin rằng đọc mã và viết ((mã)) là những phần không thể thiếu của ((việc học)) lập trình. Cố gắng không chỉ lướt qua các ví dụ mà hãy đọc kỹ và hiểu chúng. Điều này có thể chậm và khó hiểu lúc đầu, nhưng tôi hứa rằng bạn sẽ nhanh chóng hiểu được nó. Điều tương tự cũng xảy ra với ((bài tập)). Đừng cho rằng bạn hiểu chúng cho đến khi bạn thực sự viết được một lời giải hiệu quả.
 
 {{index interpretation}}
 
-I recommend you try your solutions to exercises in an actual JavaScript interpreter. That way, you'll get immediate feedback on whether what you are doing is working, and, I hope, you'll be tempted to ((experiment)) and go beyond the exercises.
+Tôi khuyên bạn nên thử các lời giải cho các bài tập trong trình thông dịch JavaScript thực tế. Bằng cách đó, bạn sẽ nhận được phản hồi ngay lập tức về việc liệu những gì bạn đang làm có hiệu quả hay không và tôi hy vọng bạn sẽ bị thu hút bởi việc ((thử nghiệm)) và vượt xa cả các bài tập.
 
 {{if interactive
 
-When reading this book in your browser, you can edit (and run) all example programs by clicking them.
+Khi đọc cuốn sách này trên trình duyệt, bạn có thể chỉnh sửa (và chạy) tất cả các chương trình mẫu bằng cách nhấp vào chúng.
 
 if}}
 
@@ -223,55 +223,55 @@ if}}
 
 {{index download, sandbox, "running code"}}
 
-The easiest way to run the example code in the book—and to experiment with it—is to look it up in the online version of the book at [_https://eloquentjavascript.net_](https://eloquentjavascript.net/). There, you can click any code example to edit and run it and to see the output it produces. To work on the exercises, go to [_https://eloquentjavascript.net/code_](https://eloquentjavascript.net/code), which provides starting code for each coding exercise and allows you to look at the solutions.
+Cách dễ nhất để chạy mã ví dụ trong sách—và thử nghiệm nó—là tìm kiếm mã đó trong phiên bản trực tuyến của sách tại [_https://eloquentjavascript.net_](https://eloquentjavascript.net/). Ở đó, bạn có thể nhấp vào bất kỳ mã mẫu nào để chỉnh sửa và chạy nó cũng như xem kết quả mà nó tạo ra. Để làm bài tập, hãy truy cập [_https://eloquentjavascript.net/code_](https://eloquentjavascript.net/code), nơi cung cấp mã bắt đầu cho mỗi bài tập viết mã và cho phép bạn xem lời giải.
 
 if}}
 
 {{index "developer tools", "JavaScript console"}}
 
-Running the programs defined in this book outside of the book's website requires some care. Many examples stand on their own and should work in any JavaScript environment. But code in later chapters is often written for a specific environment (the browser or Node.js) and can run only there. In addition, many chapters define bigger programs, and the pieces of code that appear in them depend on each other or on external files. The [sandbox](https://eloquentjavascript.net/code) on the website provides links to ZIP files containing all the scripts and data files necessary to run the code for a given chapter.
+Việc chạy các chương trình được xác định trong cuốn sách này bên ngoài trang web của cuốn sách cần phải cẩn thận. Nhiều ví dụ có thể hoạt động độc lập và hoạt động trong mọi môi trường JavaScript. Nhưng mã trong các chương sau thường được viết cho một môi trường cụ thể (trình duyệt hoặc Node.js) và chỉ có thể chạy ở đó. Ngoài ra, nhiều chương định nghĩa các chương trình lớn hơn và các đoạn mã xuất hiện trong đó phụ thuộc vào nhau hoặc vào các tệp bên ngoài. [sandbox](https://eloquentjavascript.net/code) trên trang web cung cấp liên kết đến các tệp ZIP chứa tất cả các tập lệnh và tệp dữ liệu cần thiết để chạy mã cho một chương nhất định.
 
-## Overview of this book
+## Tổng quan về cuốn sách này
 
-This book contains roughly three parts. The first 12 chapters discuss the JavaScript language. The next seven chapters are about web ((browsers)) and the way JavaScript is used to program them. Finally, two chapters are devoted to ((Node.js)), another environment to program JavaScript in. There are five _project chapters_ in the book that describe larger example programs to give you a taste of actual programming.
+Cuốn sách này có đâu đó ba phần. 12 chương đầu tiên thảo luận về ngôn ngữ JavaScript. Bảy chương tiếp theo nói về ((trình duyệt)) web và cách sử dụng JavaScript để lập trình chúng. Cuối cùng, hai chương được dành cho ((Node.js)), một môi trường khác để lập trình JavaScript. Có năm _chương dự án_ trong cuốn sách mô tả các chương trình ví dụ lớn hơn để giúp bạn cảm nhận về lập trình thực tế.
 
-The language part of the book starts with four chapters that introduce the basic structure of the JavaScript language. They discuss [control structures](program_structure) (such as the `while` word you saw in this introduction), [functions](functions) (writing your own building blocks), and [data structures](data). After these, you will be able to write basic programs. Next, Chapters [?](higher_order) and [?](object) introduce techniques to use functions and objects to write more _abstract_ code and keep complexity under control.
+Phần ngôn ngữ của cuốn sách bắt đầu với bốn chương giới thiệu cấu trúc cơ bản của ngôn ngữ JavaScript. Chúng thảo luận về [cấu trúc điều khiển](program_structure) (chẳng hạn như từ `while` mà bạn đã thấy trong phần giới thiệu này), [hàm](functions) (viết các khối xây dựng của riêng bạn) và [cấu trúc dữ liệu](data). Sau đó, bạn sẽ có thể viết các chương trình cơ bản. Tiếp theo, các chương [?](higher_order) và [?](object) giới thiệu các kỹ thuật sử dụng các hàm và đối tượng để viết thêm mã _trừu tượng_ và kiểm soát độ phức tạp.
 
-After a [first project chapter](robot) that builds a crude delivery robot, the language part of the book continues with chapters on [error handling and bug fixing](error), [regular expressions](regexp) (an important tool for working with text), [modularity](modules) (another defense against complexity), and [asynchronous programming](async) (dealing with events that take time). The [second project chapter](language), where we implement a programming language, concludes the first part of the book.
+Sau [chương dự án đầu tiên](robot) xây dựng một robot giao hàng thô sơ, phần ngôn ngữ của cuốn sách tiếp tục với các chương về [xử lý lỗi và sửa lỗi](error), [biểu thức chính quy](regexp) (một công cụ quan trọng để làm việc với văn bản), [mô-đun](modules) (một biện pháp bảo vệ khác chống lại sự phức tạp) và [lập trình không đồng bộ](async) (xử lý các sự kiện tốn thời gian). [Chương dự án thứ hai](language), nơi chúng ta triển khai ngôn ngữ lập trình, kết thúc phần đầu tiên của cuốn sách.
 
-The second part of the book, Chapters [?](browser) to [?](paint), describes the tools that browser JavaScript has access to. You'll learn to display things on the screen (Chapters [?](dom) and [?](canvas)), respond to user input ([Chapter ?](event)), and communicate over the network ([Chapter ?](http)). There are again two project chapters in this part: building a [platform game](game) and a [pixel paint program](paint).
+Phần thứ hai của cuốn sách, Chương [?](browser) đến [?](paint), mô tả các công cụ mà trình duyệt JavaScript có quyền truy cập. Bạn sẽ học cách hiển thị mọi thứ trên màn hình (Chương [?](dom) và [?](canvas)), phản hồi thông tin đầu vào của người dùng ([Chương ?](event)) và giao tiếp qua mạng ([Chương ? ](http)). Lại có hai chương dự án trong phần này: xây dựng [trò chơi nền tảng](game) và [chương trình vẽ pixel](paint).
 
-[Chapter ?](node) describes Node.js, and [Chapter ?](skillsharing) builds a small website using that tool.
+[Chương ?](node) mô tả Node.js và [Chương ?](skillsharing) xây dựng một trang web nhỏ bằng công cụ đó.
 
 {{if commercial
 
-Finally, [Chapter ?](fast) describes some of the considerations that come up when optimizing JavaScript programs for speed.
+Cuối cùng, [Chương ?](fast) mô tả một số vấn đề cần cân nhắc khi tối ưu hóa tốc độ của chương trình JavaScript.
 
 if}}
 
-## Typographic conventions
+## Quy ước về kiểu chữ
 
 {{index "factorial function"}}
 
-In this book, text written in a `monospaced` font will represent elements of programs. Sometimes these are self-sufficient fragments, and sometimes they just refer to part of a nearby program. Programs (of which you have already seen a few) are written as follows:
+Trong cuốn sách này, văn bản viết bằng phông chữ `monospaced`(đơn cách) sẽ thể hiện các thành phần của chương trình. Đôi khi đây là những đoạn tự cung cấp và đôi khi chúng chỉ đề cập đến một phần của chương trình gần đó. Các chương trình (mà bạn đã thấy một số) được viết như sau:
 
 ```
-function factorial(n) {
+function giaithua(n) {
   if (n == 0) {
     return 1;
   } else {
-    return factorial(n - 1) * n;
+    return giaithua(n - 1) * n;
   }
 }
 ```
 
 {{index "console.log"}}
 
-Sometimes, to show the output that a program produces, the expected output is written after it, with two slashes and an arrow in front.
+Đôi khi, để hiển thị kết quả mà một chương trình tạo ra, kết quả mong đợi được viết sau chương trình đó, với hai dấu gạch chéo và một mũi tên ở phía trước.
 
 ```
-console.log(factorial(8));
+console.log(giaithua(8));
 // → 40320
 ```
 
-Good luck!
+Chúc may mắn!
