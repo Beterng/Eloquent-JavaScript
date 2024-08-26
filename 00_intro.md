@@ -4,21 +4,21 @@
 
 {{quote {author: "Ellen Ullman", title: "Close to the Machine: Technophilia and Its Discontents", chapter: true}
 
-Chúng ta thường nghĩ có thể tạo ra hệ thống có mục đích riêng và tin rằng nó được tạo dựa trên hình ảnh của chính bản thân... Nhưng máy tính thì không như vậy. Nó chỉ phản chiếu lại một phần rất nhỏ trong chúng ta: sự logic, các trật tự, quy tắc và sự minh bạch.
+Chúng ta nghĩ rằng chúng ta đang tạo ra hệ thống cho mục đích riêng, và tin rằng nó được tạo ra theo hình ảnh của  chính bản thân mình... Nhưng máy tính không thực sự giống chúng ta. Nó là sự phản chiếu của một phần rất nhỏ trong chúng ta: phần dành cho logic, trật tự, quy tắc và sự rõ ràng.
 
 quote}}
 
 {{figure {url: "img/chapter_picture_00.jpg", alt: "Hình minh họa chiếc tua vít bên cạnh bảng mạch có cùng kích thước", chapter: "framed"}}}
 
-Cuốn sách này là về việc ra lệnh cho ((máy tính)). Máy tính hiện nay phổ biến không khác gì tua vít vậy, nhưng nó có phần phức tạp hơn, và điều khiển chúng làm theo ý mình không phải lúc nào cũng dễ.
+Cuốn sách này là về việc ra lệnh cho ((máy tính)). Máy tính hiện nay phổ biến không khác gì những chiếc tua vít vậy, nhưng nó có phần phức tạp hơn, và điều khiển chúng làm theo ý mình không phải lúc nào cũng dễ.
 
-Nếu nhiệm vụ bạn giao cho máy tính là một công việc thông thường, dễ hiểu, ví dụ như hiển thị email hoặc làm một chiếc máy tính cầm tay, bạn chỉ cần mở ((ứng dụng)) thích hợp và vào việc. Nhưng đối với các nhiệm vụ đặc biệt hoặc không có kết thúc rõ ràng, thì thường không có các ứng dụng thích hợp như vậy.
+Nếu nhiệm vụ bạn giao cho máy tính là một công việc thông thường và dễ hiểu, ví dụ như hiển thị email hoặc làm việc như một chiếc máy tính cầm tay, bạn chỉ cần mở ((ứng dụng)) thích hợp và vào việc. Nhưng đối với các nhiệm vụ đặc biệt hoặc không có kết thúc rõ ràng thì thường không có các ứng dụng thích hợp như vậy.
 
-Đó là lúc ((lập trình)) xuất hiện. _Lập trình_ là hành động xây dựng _chương trình_-một tập hợp các hướng dẫn chính xác cho máy tính biết phải làm gì. Bởi vì máy tính là con quái vật vừa dỏm vừa ngốc nghếch, việc lập trình về cơ bản là tẻ nhạt và khó chịu.
+Đó là lúc ((lập trình)) xuất hiện. _Lập trình_ là hành động xây dựng _chương trình_-một tập hợp các hướng dẫn cho máy tính biết chính xác phải làm gì. Bởi vì máy tính là con quái vật vừa dỏm vừa ngốc nghếch, nên lập trình về cơ bản là một công việc tẻ nhạt và khó chịu.
 
 {{index [programming, "joy of"], speed}}
 
-May mắn thay, nếu bạn có thể vượt qua thực tế đó—và thậm chí có thể tận hưởng sự nghiêm túc trong suy nghĩ mà những cỗ máy ngu ngốc có thể xử lý—thì việc lập trình có thể rất bổ ích. Nó cho phép bạn thực hiện mọi việc trong vài giây mà có thể mất _mãi mãi_ bằng tay. Đó là một cách để làm cho công cụ máy tính của bạn làm được những việc mà trước đây nó không thể làm được. Trên hết, nó tạo nên một trò chơi tuyệt vời về giải câu đố và tư duy trừu tượng.
+May mắn thay, nếu bạn có thể vượt qua thực tế đó—và thậm chí có thể tận hưởng sự nghiêm túc trong suy nghĩ mà những cỗ máy ngu ngốc có thể xử lý—thì việc lập trình có thể rất bổ ích. Nó cho phép bạn thực hiện mọi việc trong vài giây mà có thể _mãi mãi_ không thể thực hiện được bằng tay. Đó là một cách để làm cho công cụ máy tính của bạn làm được những việc mà trước đây nó không thể làm được. Trên hết, nó tạo nên một trò chơi tuyệt vời về giải câu đố và tư duy trừu tượng.
 
 Hầu hết việc lập trình được thực hiện bằng ((ngôn ngữ lập trình)). _Ngôn ngữ lập trình_ là ngôn ngữ được con người xây dựng dùng để chỉ dẫn máy tính. Điều thú vị là cách hiệu quả nhất mà chúng ta tìm ra để giao tiếp với máy tính lại vay mượn rất nhiều từ cách chúng ta giao tiếp với nhau. Giống như ngôn ngữ của con người, ngôn ngữ máy tính cho phép các từ và cụm từ được kết hợp theo những cách mới, giúp thể hiện các khái niệm mới hơn.
 
@@ -38,7 +38,7 @@ Bên cạnh việc giải thích về JavaScript, tôi cũng sẽ giới thiệu
 
 {{index learning}}
 
-Sẽ có lúc đọc cuốn sách này mà cảm thấy vô cùng bực bội. Nếu bạn là người mới làm quen với lập trình, sẽ có rất nhiều tài liệu mới cần tiếp thu. Phần lớn tài liệu này sau đó sẽ được _kết hợp_ theo những cách đòi hỏi bạn phải tạo thêm các sự liên kết.
+Sẽ có lúc đọc cuốn sách này mà cảm thấy vô cùng bực bội. Nếu bạn là người mới làm quen với lập trình, sẽ có rất nhiều tài liệu mới cần tiếp thu. Phần lớn tài liệu này sau đó sẽ được _kết hợp_ theo những cách đòi hỏi bạn phải tự tìm thấy sự liên kết.
 
 Việc nỗ lực khi cần thiết là tùy bạn. Khi bạn đang loay hoay theo đuổi cuốn sách, đừng vội đưa ra bất kỳ kết luận nào về khả năng của bản thân. Bạn ổn-bạn chỉ cần tiếp tục cố gắng. Hãy nghỉ ngơi, đọc lại một số tài liệu và đảm bảo rằng bạn đã đọc và hiểu các chương trình ví dụ và ((bài tập)). Học tập là một công việc khó khăn, nhưng mọi thứ bạn học đều là của bạn và sẽ giúp việc học tiếp theo trở nên dễ dàng hơn.
 
@@ -52,13 +52,13 @@ quote}}
 
 {{index [program, "nature of"], data}}
 
-Một chương trình bao gồm rất nhiều thứ. Nó là một đoạn văn bản do lập trình viên gõ ra, nó là tác nhân điều khiển máy tính thực hiện công việc của nó, nó là dữ liệu trong bộ nhớ của máy tính, đồng thời nó điều khiển các hành động thực hiện trên bộ nhớ này. Những sự cố gắng so sánh các chương trình với các đối tượng quen thuộc thường có xu hướng thiếu sót. Một cách phù hợp về hình thức là so sánh một chương trình với một cái máy - rất nhiều bộ phận riêng biệt có xu hướng tham gia và để làm cho tổng thể hoạt động tốt, chúng ta phải xem xét cách thức mà các bộ phận này kết nối với nhau và đóng góp vào hoạt động của tổng thể.
+Một chương trình có thể là rất nhiều thứ. Nó là một đoạn văn bản do lập trình viên viết ra, nó là tác nhân điều khiển máy tính thực hiện công việc của nó, nó là dữ liệu trong bộ nhớ của máy tính, đồng thời nó điều khiển các hành động thực hiện trên bộ nhớ này. Những sự cố gắng so sánh các chương trình với các đối tượng quen thuộc thường có xu hướng mắc phải thiếu sót. Một cách phù hợp về hình thức là so sánh một chương trình với một cỗ máy - với rất nhiều bộ phận riêng biệt có xu hướng liên kết với nhau. Và để làm cho tổng thể hoạt động tốt, chúng ta phải xem xét cách thức mà các bộ phận này kết nối với nhau và đóng góp vào hoạt động của tổng thể.
 
-((Máy tính)) là một cỗ máy vật lý đóng vai trò là chủ thể cho các cỗ máy phi vật chất này. Bản thân máy tính chỉ có thể làm những việc đơn giản một cách ngu ngốc. Lý do chúng rất hữu ích là vì chúng làm những việc này với ((tốc độ)) cực kỳ cao. Một chương trình có thể khéo léo kết hợp một số lượng lớn các hành động đơn giản này để thực hiện những việc rất phức tạp.
+((Máy tính)) là một cỗ máy vật lý đóng vai trò là chủ thể của các cỗ máy phi vật chất này. Bản thân máy tính chỉ có thể làm những việc đơn giản một cách ngu ngốc. Lý do chúng rất hữu ích là vì chúng làm những việc này với ((tốc độ)) cực kỳ cao. Một chương trình có thể khéo léo kết hợp một số lượng lớn các hành động đơn giản này để thực hiện những việc rất phức tạp.
 
 {{index [programming, "joy of"]}}
 
-Chương trình là công trình của ý tưởng. Nó không tốn kém để xây dựng, nó nhẹ tênh và dễ dàng phát triển dưới bàn tay đánh máy của chúng ta. Nhưng khi một chương trình phát triển thì ((độ phức tạp)) của nó cũng tăng theo. Kỹ năng lập trình là kỹ năng xây dựng chương trình mà không gây nhầm lẫn cho lập trình viên. Các chương trình tốt nhất là những chương trình có thể làm được điều gì đó thú vị trong khi vẫn dễ hiểu.
+Chương trình là công trình của ý tưởng. Nó không tốn kém để xây dựng, nhẹ tênh và dễ dàng phát triển dưới bàn tay đánh máy của chúng ta. Nhưng khi một chương trình phát triển thì ((độ phức tạp)) của nó cũng tăng theo. Kỹ năng lập trình là kỹ năng xây dựng chương trình mà không gây nhầm lẫn cho lập trình viên. Các chương trình tốt nhất là những chương trình có thể làm được điều gì đó thú vị trong khi vẫn dễ hiểu.
 
 {{index "programming style", "best practices"}}
 
@@ -88,7 +88,7 @@ Ban đầu, ở thời kì sơ khai của máy tính, không hề có ngôn ng�
 
 {{index [programming, "history of"], "punch card", complexity}}
 
-Đây là chương trình cộng các số từ 1 đến 10 và in ra kết quả: `1 + 2 + ... + 10 = 55`. Nó có thể chạy trên một máy giả định đơn giản. Để lập trình cho những chiếc máy tính đời đầu, cần phải đặt những dãy công tắc lớn vào đúng vị trí hoặc đục lỗ trên các dải bìa cứng và đưa chúng vào máy tính. Bạn có thể tưởng tượng quy trình này tẻ nhạt và dễ xảy ra lỗi như thế nào. Ngay cả việc viết những chương trình đơn giản cũng đòi hỏi nhiều sự thông minh và kỷ luật. Những cái phức tạp gần như không thể tưởng tượng được.
+Đây là chương trình cộng các số từ 1 đến 10 và in ra kết quả: `1 + 2 + ... + 10 = 55`. Nó có thể chạy trên một máy giả định đơn giản. Để lập trình cho những chiếc máy tính đời đầu, cần phải đặt các dãy công tắc lớn vào đúng vị trí hoặc đục lỗ trên các dải bìa cứng và đưa chúng vào máy tính. Bạn có thể tưởng tượng quy trình này tẻ nhạt và dễ xảy ra lỗi như thế nào. Ngay cả việc viết những chương trình đơn giản cũng đòi hỏi nhiều sự thông minh và kỷ luật. Những cái phức tạp gần như không thể tưởng tượng được.
 
 {{index bit, "wizard (mighty)"}}
 
@@ -110,33 +110,33 @@ Mỗi dòng của chương trình trước chứa một lệnh duy nhất. Nó c
 
 {{index readability, naming, binding}}
 
-Mặc dù điều đó đã dễ đọc hơn so với món cháo bit, nhưng nó vẫn còn khá mơ hồ. Việc sử dụng tên thay vì số cho các câu lệnh và vị trí bộ nhớ sẽ giúp ích.
+Mặc dù điều đó đã dễ đọc hơn so với món cháo toàn bit, nhưng nó vẫn còn khá mơ hồ. Việc sử dụng tên thay vì số cho các câu lệnh và vị trí bộ nhớ sẽ giúp ích.
 
 ```{lang: "null"}
-  Đặt “tổng” thành 0.
-  Đặt “sốlượng” thành 1.
-[vònglặp]
-  Đặt “sosánh” thành “sốlượng””.
-  Trừ 11 khỏi “sosánh”.
-  Nếu “sosánh” là 0, tiếptục tại [kếtthúc].
-  Thêm “sốlượng” vào “tổng”.
-  Thêm 1 vào “sốlượng”.
-  Tiếptục tại [vònglặp].
+  Đặt “tong” thành 0.
+  Đặt “sodem” thành 1.
+[vonglap]
+  Đặt “sosanh” thành “sodem”.
+  Trừ 11 khỏi “sosanh”.
+  Nếu “sosanh” là 0, tiếptục tại [ketthuc].
+  Thêm “sodem” vào “tong”.
+  Thêm 1 vào “sodem”.
+  Tiếptục tại [vonglap].
 [kếtthúc]
-  Xuấtra “tổng”.
+  Xuấtra “tong”.
 ```
 
 {{index loop, jump, "summing example"}}
 
-Bạn có thể thấy chương trình hoạt động như thế nào vào lúc này? Hai dòng đầu tiên cung cấp cho hai vị trí bộ nhớ các giá trị bắt đầu của chúng: `tổng` sẽ được sử dụng để tạo kết quả tính toán và `sốlượng` sẽ theo dõi số mà chúng ta hiện đang xem. Những dòng sử dụng `sosánh` có lẽ là những dòng khó hiểu nhất. Chương trình muốn xem liệu `sốlượng` có bằng 11 hay không để quyết định xem nó có thể ngừng chạy hay không. Bởi vì cỗ máy giả định của chúng ta khá là nguyên thủy nên nó chỉ có thể kiểm tra xem một số có bằng 0 hay không và đưa ra quyết định dựa trên đó. Do đó, nó sử dụng vị trí bộ nhớ có nhãn `sosánh` để tính giá trị của `sốlượng - 11` và đưa ra quyết định dựa trên giá trị đó. Hai dòng tiếp theo thêm giá trị của `sốlượng` vào kết quả và tăng `sốlượng` lên 1 mỗi khi chương trình quyết định rằng `sốlượng` chưa phải là 11.
+Bạn thấy chương trình hoạt động như thế nào vào lúc này? Hai dòng đầu tiên cung cấp cho hai vị trí bộ nhớ các giá trị bắt đầu của chúng: `tong` sẽ được sử dụng để tạo kết quả tính toán và `sodem` sẽ theo dõi số mà chúng ta hiện đang xem. Những dòng sử dụng `sosanh` có lẽ là những dòng khó hiểu nhất. Chương trình muốn xem liệu `sodem` có bằng 11 hay không để quyết định xem nó có thể ngừng chạy hay không. Bởi vì cỗ máy giả định của chúng ta khá là nguyên thủy nên nó chỉ có thể kiểm tra xem một số có bằng 0 hay không và đưa ra quyết định dựa trên đó. Do đó, nó sử dụng vị trí bộ nhớ có nhãn `sosanh` để tính giá trị của `sodem - 11` và đưa ra quyết định dựa trên giá trị đó. Hai dòng tiếp theo thêm giá trị của `sodem` vào kết quả và tăng `sodem` lên 1 mỗi khi chương trình quyết định rằng `sodem` chưa phải là 11.
 
 Đây là chương trình tương tự bằng JavaScript:
 
 ```
-let tong = 0, soluong = 1;
-while (soluong <= 10) {
-  tong += soluong;
-  soluong += 1;
+let tong = 0, sodem = 1;
+while (sodem <= 10) {
+  tong += sodem;
+  sodem += 1;
 }
 console.log(tong);
 // → 55
@@ -144,7 +144,7 @@ console.log(tong);
 
 {{index "while loop", loop, [braces, block]}}
 
-Phiên bản này đem lại cho chúng ta thêm một số cải tiến. Quan trọng nhất, không cần phải chỉ định cách chúng ta muốn chương trình nhảy qua nhảy lại nữa—cấu trúc `while` sẽ đảm nhiệm việc đó. Nó tiếp tục thực thi khối (được bọc trong dấu ngoặc nhọn) bên dưới nó miễn là điều kiện được đưa ra vẫn được giữ nguyên. Điều kiện đó là `count <= 10`, có nghĩa là “số đếm nhỏ hơn hoặc bằng 10”. Chúng ta không còn phải tạo một giá trị tạm thời và so sánh giá trị đó với 0 nữa, đó chỉ là một chi tiết không mấy thú vị. Một phần sức mạnh của ngôn ngữ lập trình là chúng có thể xử lý những chi tiết không thú vị đối với chúng ta.
+Phiên bản này đem lại cho chúng ta thêm một số cải tiến. Quan trọng nhất, không cần phải chỉ định cách chúng ta muốn chương trình nhảy qua nhảy lại nữa—cấu trúc `while` sẽ đảm nhiệm việc đó. Nó tiếp tục thực thi khối (được bọc trong dấu ngoặc nhọn) bên dưới nó miễn là điều kiện được đưa ra vẫn được giữ nguyên. Điều kiện đó là `sodem <= 10`, có nghĩa là “số đếm nhỏ hơn hoặc bằng 10”. Chúng ta không còn phải tạo một giá trị tạm thời và so sánh giá trị đó với 0 nữa, đó chỉ là một chi tiết không mấy thú vị. Một phần sức mạnh của ngôn ngữ lập trình là chúng có thể xử lý những chi tiết không thú vị đối với chúng ta.
 
 {{index "console.log"}}
 
@@ -152,7 +152,7 @@ Phiên bản này đem lại cho chúng ta thêm một số cải tiến. Quan t
 
 {{index "sum function", "range function", abstraction, function}}
 
-Cuối cùng, đây là tổng quan chương trình nếu chúng ta tình cờ có sẵn các phép toán thuận tiện `range`(phạm vi) và `sum`(tổng), tương ứng với việc tạo ra một ((collection)) (tập hợp) các số trong một phạm vi và tính tổng của một tập hợp các số:
+Cuối cùng, đây là tổng quan chương trình nếu chúng ta tình cờ có sẵn các phép tính thuận tiện như `range` (phạm vi) và `sum` (tổng), tương ứng với việc tạo ra một ((collection)) (tập hợp) các số trong một phạm vi và tính tổng của một tập hợp các số:
 
 ```{startCode: true}
 console.log(sum(range(1, 10)));
@@ -161,11 +161,11 @@ console.log(sum(range(1, 10)));
 
 {{index readability}}
 
-Qua đó, cùng một chương trình có thể được diễn đạt theo cả cách dài và ngắn, không thể đọc được và có thể đọc được. Phiên bản đầu tiên của chương trình cực kỳ khó hiểu, trong khi phiên bản cuối cùng này gần như bằng tiếng Anh: ghi tổng của dãy số từ 1 đến 10. (Chúng ta sẽ xem trong [các chương sau](data) cách để xác định các phép toán như tổng và phạm vi.)
+Qua đó ta có thể rút ra được, cùng một chương trình có thể được diễn đạt theo cả cách dài và ngắn, không thể đọc được và có thể đọc được. Phiên bản đầu tiên của chương trình cực kỳ khó hiểu, trong khi phiên bản cuối cùng này gần như bằng tiếng Anh: ghi tổng của dãy số từ 1 đến 10. (Chúng ta sẽ xem trong [các chương sau](data) cách để xác định các phép toán như tổng và phạm vi.)
 
 {{index ["programming language", "power of"], composability}}
 
-Một ngôn ngữ lập trình tốt sẽ giúp lập trình viên bằng cách cho phép họ nói về các hành động mà máy tính phải thực hiện ở ột cấp độ cao hơn. Nó giúp bỏ qua các chi tiết, cung cấp các khối xây dựng thuận tiện (chẳng hạn như `while` và `console.log`), cho phép bạn xác định các khối xây dựng của riêng mình (chẳng hạn như `sum` và `range`) và làm cho các khối đó dễ dàng sắp xếp.
+Một ngôn ngữ lập trình tốt sẽ giúp ích cho lập trình viên bằng cách cho phép họ nói về các hành động mà máy tính phải thực hiện ở một cấp độ cao hơn. Nó giúp bỏ qua các chi tiết, cung cấp các khối xây dựng thuận tiện (chẳng hạn như `while` và `console.log`), cho phép bạn xác định các khối xây dựng của riêng mình (chẳng hạn như `sum` và `range`) và làm cho các khối đó dễ dàng sắp xếp.
 
 ## JavaScript là gì?
 
@@ -183,11 +183,11 @@ JavaScript được giới thiệu vào năm 1995 như một cách để thêm c
 
 {{index ECMAScript, compatibility}}
 
-Sau khi được áp dụng bên ngoài Netscape, một tài liệu ((tiêu chuẩn)) đã được viết ra để mô tả cách hoạt động của ngôn ngữ JavaScript để các phần mềm khác nhau tuyên bố hỗ trợ JavaScript có thể đảm bảo rằng chúng thực sự cung cấp cùng một ngôn ngữ. Đây được gọi là tiêu chuẩn ECMAScript, theo tên tổ chức Ecma International tiến hành tiêu chuẩn hóa. Trong thực tế, thuật ngữ ECMAScript và JavaScript có thể được sử dụng thay thế cho nhau—chúng là hai tên cho cùng một ngôn ngữ.
+Sau khi được áp dụng bên ngoài Netscape, một tài liệu ((tiêu chuẩn)) đã được viết ra để mô tả cách hoạt động của ngôn ngữ JavaScript để các phần mềm tuyên bố hỗ trợ JavaScript khác nhau có thể đảm bảo rằng chúng thực sự cung cấp cùng một ngôn ngữ. Đây được gọi là tiêu chuẩn ECMAScript, theo tên tổ chức Ecma International tiến hành tiêu chuẩn hóa. Trong thực tế, thuật ngữ ECMAScript và JavaScript có thể được sử dụng thay thế cho nhau—chúng là hai tên cho cùng một ngôn ngữ.
 
 {{index [JavaScript, "weaknesses of"], debugging}}
 
-Có những người sẽ nói những điều _tệ hại_ về JavaScript. Nhiều điều trong số này là sự thật. Khi tôi được yêu cầu viết thứ gì đó bằng JavaScript lần đầu tiên, tôi nhanh chóng coi thường nó. Nó sẽ chấp nhận hầu hết mọi thứ tôi gõ nhưng diễn giải nó theo cách hoàn toàn khác với ý tôi. Tất nhiên, điều này liên quan nhiều đến thực tế là tôi không biết mình đang làm gì, nhưng có một vấn đề thực sự ở đây: JavaScript rất tự do trong những gì nó cho phép. Ý tưởng đằng sau thiết kế này là nó sẽ giúp việc lập trình bằng JavaScript trở nên dễ dàng hơn đối với người mới bắt đầu. Trên thực tế, điều này chủ yếu khiến việc tìm kiếm sự cố trong chương trình của bạn trở nên khó khăn hơn vì hệ thống sẽ không chỉ ra chúng cho bạn.
+Có những người sẽ nói những điều _tệ hại_ về JavaScript. Nhiều điều trong số này là sự thật. Khi tôi được yêu cầu viết thứ gì đó bằng JavaScript lần đầu tiên, tôi nhanh chóng coi thường nó. Nó sẽ chấp nhận hầu hết mọi thứ tôi viết nhưng diễn giải nó theo cách hoàn toàn khác với ý tôi. Tất nhiên, điều này liên quan nhiều đến thực tế là tôi không biết mình đang làm gì, nhưng có một vấn đề thực sự ở đây: JavaScript rất tự do trong những gì nó cho phép. Ý tưởng đằng sau thiết kế này là nó sẽ giúp việc lập trình bằng JavaScript trở nên dễ dàng hơn đối với người mới bắt đầu. Trên thực tế, điều này chủ yếu khiến việc tìm kiếm sự cố trong chương trình của bạn trở nên khó khăn hơn vì hệ thống sẽ không chỉ ra chúng cho bạn.
 
 {{index [JavaScript, "flexibility of"], flexibility}}
 
@@ -195,9 +195,9 @@ Tính linh hoạt này cũng có những ưu điểm của nó. Nó nhường ch
 
 {{index future, [JavaScript, "versions of"], ECMAScript, "ECMAScript 6"}}
 
-Đã có một số phiên bản JavaScript. ECMAScript phiên bản 3 là phiên bản được hỗ trợ rộng rãi trong thời kỳ JavaScript vươn lên thống trị, khoảng từ năm 2000 đến năm 2010. Trong thời gian này, các nỗ lực đã được tiến hành trên phiên bản 4 đầy tham vọng, trong đó có kế hoạch thực hiện một số cải tiến và mở rộng căn bản cho ngôn ngữ này. Việc thay đổi một ngôn ngữ sống động, được sử dụng rộng rãi theo cách triệt để như vậy hóa ra lại rất khó khăn và việc phát triển phiên bản 4 đã bị hủy bỏ vào năm 2008. Phiên bản 5 ít tham vọng hơn nhiều, chỉ thực hiện một số cải tiến không gây tranh cãi, đã ra mắt vào năm 2009. Năm 2015, phiên bản 6 đã ra mắt, một bản cập nhật lớn bao gồm một số ý tưởng đã được lên kế hoạch cho phiên bản 4. Kể từ đó, chúng ta đã có những bản cập nhật nhỏ, mới hàng năm.
+Đã có một số phiên bản JavaScript. ECMAScript phiên bản 3 là phiên bản được hỗ trợ rộng rãi trong thời kỳ JavaScript vươn lên thống trị, khoảng từ năm 2000 đến năm 2010. Trong thời gian này, các nỗ lực đã được tiến hành trên phiên bản 4 đầy tham vọng, trong đó có kế hoạch thực hiện một số cải tiến và mở rộng căn bản cho ngôn ngữ này. Việc thay đổi một ngôn ngữ sống động, được sử dụng rộng rãi theo cách triệt để như vậy hóa ra lại rất khó khăn và việc phát triển phiên bản 4 đã bị hủy bỏ vào năm 2008. Phiên bản 5 ít tham vọng hơn nhiều, chỉ thực hiện một số cải tiến bớt gây tranh cãi, đã ra mắt vào năm 2009. Năm 2015, phiên bản 6 đã ra mắt, một bản cập nhật lớn bao gồm một số ý tưởng đã được lên kế hoạch cho phiên bản 4. Kể từ đó, chúng ta đã có những bản cập nhật nhỏ, mới hàng năm.
 
-Thực tế là JavaScript đang phát triển có nghĩa là các trình duyệt phải liên tục theo kịp. Nếu bạn đang sử dụng trình duyệt cũ hơn, trình duyệt đó có thể không hỗ trợ mọi tính năng. Các nhà thiết kế ngôn ngữ cẩn thận không thực hiện bất kỳ thay đổi nào có thể làm hỏng các chương trình hiện có, vì vậy các trình duyệt mới vẫn có thể chạy các chương trình cũ. Trong cuốn sách này, tôi đang sử dụng phiên bản JavaScript 2024.
+Thực tế là JavaScript đang phát triển có nghĩa là các trình duyệt phải liên tục theo kịp. Nếu bạn đang sử dụng trình duyệt cũ hơn, trình duyệt đó có thể sẽ không hỗ trợ mọi tính năng. Các nhà thiết kế ngôn ngữ đã rất cẩn thận không thực hiện bất kỳ thay đổi nào có thể làm hỏng các chương trình hiện có, vì vậy các trình duyệt mới vẫn có thể chạy các chương trình cũ. Trong cuốn sách này, tôi đang sử dụng phiên bản JavaScript 2024.
 
 {{index [JavaScript, "uses of"]}}
 
@@ -207,11 +207,11 @@ Trình duyệt web không phải là nền tảng duy nhất sử dụng JavaScr
 
 {{index "reading code", "writing code"}}
 
-_Mã lệnh_ (code) là văn bản tạo nên chương trình. Hầu hết các chương trong cuốn sách này đều chứa khá nhiều mã. Tôi tin rằng đọc mã và viết ((mã)) là những phần không thể thiếu của ((việc học)) lập trình. Cố gắng không chỉ lướt qua các ví dụ mà hãy đọc kỹ và hiểu chúng. Điều này có thể chậm và khó hiểu lúc đầu, nhưng tôi hứa rằng bạn sẽ nhanh chóng hiểu được nó. Điều tương tự cũng xảy ra với ((bài tập)). Đừng cho rằng bạn hiểu chúng cho đến khi bạn thực sự viết được một lời giải hiệu quả.
+_Mã lệnh_ (code) là văn bản tạo nên chương trình. Hầu hết các chương trong cuốn sách này đều chứa khá nhiều mã. Tôi tin rằng đọc mã và viết ((mã)) là những phần không thể thiếu của ((việc học)) lập trình. Cố gắng không chỉ lướt qua các ví dụ mà hãy đọc kỹ và hiểu chúng. Điều này có thể chậm và khó hiểu lúc đầu, nhưng tôi hứa rằng bạn sẽ nhanh chóng hiểu được nó. Điều tương tự cũng xảy ra với các ((bài tập)). Đừng cho rằng bạn hiểu chúng cho đến khi bạn thực sự viết được một lời giải hiệu quả.
 
 {{index interpretation}}
 
-Tôi khuyên bạn nên thử các lời giải cho các bài tập trong trình thông dịch JavaScript thực tế. Bằng cách đó, bạn sẽ nhận được phản hồi ngay lập tức về việc liệu những gì bạn đang làm có hiệu quả hay không và tôi hy vọng bạn sẽ bị thu hút bởi việc ((thử nghiệm)) và vượt xa cả các bài tập.
+Tôi khuyên bạn nên thử với các lời giải cho các bài tập trong trình thông dịch JavaScript thực tế. Bằng cách đó, bạn sẽ nhận được phản hồi ngay lập tức về việc liệu những gì bạn đang làm có hiệu quả hay không và tôi hy vọng bạn sẽ bị thu hút bởi việc ((thử nghiệm)) và vượt xa cả các bài tập.
 
 {{if interactive
 
