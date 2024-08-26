@@ -4,7 +4,7 @@
 
 {{quote {author: "Ellen Ullman", title: "Close to the Machine: Technophilia and Its Discontents", chapter: true}
 
-We think we are creating the system for our own purposes. We believe we are making it in our own image... But the computer is not really like us. It is a projection of a very slim part of ourselves: that portion devoted to logic, order, rule, and clarity.
+Chúng ta thường nghĩ chúng ta có thể tạo một hệ thống máy tính riêng cho mục đích riêng và tin rằng bản thân chính mình đang tạo ra nó dưới bức tranh đa màu ... Nhưng máy tính lại không giống chúng ta. Điều đó là một sự phản chiếu nhỏ trong một phần nhỏ vấn để chúng ta đang đối mặt: và được phản ánh qua sự logic, các trật tự, cũng như những quy tắc, và sự minh bạch chính xác cao.
 
 quote}}
 
