@@ -14,7 +14,7 @@ Cuốn sách này là về việc ra lệnh cho ((máy tính)). Máy tính hiệ
 
 Nếu nhiệm vụ bạn giao cho máy tính là một công việc thông thường và dễ hiểu, ví dụ như hiển thị email hoặc làm việc như một chiếc máy tính cầm tay, bạn chỉ cần mở ((ứng dụng)) thích hợp và vào việc. Nhưng đối với các nhiệm vụ đặc biệt hoặc không có kết thúc rõ ràng thì thường không có các ứng dụng thích hợp như vậy.
 
-Đó là lúc ((lập trình)) xuất hiện. _Lập trình_ là hành động xây dựng _chương trình_-một tập hợp các hướng dẫn cho máy tính biết chính xác phải làm gì. Bởi vì máy tính là con quái vật vừa dỏm vừa ngốc nghếch, nên lập trình về cơ bản là một công việc tẻ nhạt và khó chịu.
+Đó là lúc ((lập trình)) xuất hiện. _Lập trình_ là hành động xây dựng _chương trình_—một tập hợp các hướng dẫn cho máy tính biết chính xác phải làm gì. Bởi vì máy tính là con quái vật vừa dỏm vừa ngốc nghếch, nên lập trình về cơ bản là một công việc tẻ nhạt và khó chịu.
 
 {{index [programming, "joy of"], speed}}
 
@@ -40,7 +40,7 @@ Bên cạnh việc giải thích về JavaScript, tôi cũng sẽ giới thiệu
 
 Sẽ có lúc đọc cuốn sách này mà cảm thấy vô cùng bực bội. Nếu bạn là người mới làm quen với lập trình, sẽ có rất nhiều tài liệu mới cần tiếp thu. Phần lớn tài liệu này sau đó sẽ được _kết hợp_ theo những cách đòi hỏi bạn phải tự tìm thấy sự liên kết.
 
-Việc nỗ lực khi cần thiết là tùy bạn. Khi bạn đang loay hoay theo đuổi cuốn sách, đừng vội đưa ra bất kỳ kết luận nào về khả năng của bản thân. Bạn ổn-bạn chỉ cần tiếp tục cố gắng. Hãy nghỉ ngơi, đọc lại một số tài liệu và đảm bảo rằng bạn đã đọc và hiểu các chương trình ví dụ và ((bài tập)). Học tập là một công việc khó khăn, nhưng mọi thứ bạn học đều là của bạn và sẽ giúp việc học tiếp theo trở nên dễ dàng hơn.
+Việc nỗ lực khi cần thiết là tùy bạn. Khi bạn đang loay hoay theo đuổi cuốn sách, đừng vội đưa ra bất kỳ kết luận nào về khả năng của bản thân. Bạn ổn—bạn chỉ cần tiếp tục cố gắng. Hãy nghỉ ngơi, đọc lại một số tài liệu và đảm bảo rằng bạn đã đọc và hiểu các chương trình ví dụ và ((bài tập)). Học tập là một công việc khó khăn, nhưng mọi thứ bạn học đều là của bạn và sẽ giúp việc học tiếp theo trở nên dễ dàng hơn.
 
 {{quote {author: "Ursula K. Le Guin", title: "The Left Hand of Darkness"}
 
@@ -52,7 +52,7 @@ quote}}
 
 {{index [program, "nature of"], data}}
 
-Một chương trình có thể là rất nhiều thứ. Nó là một đoạn văn bản do lập trình viên viết ra, nó là tác nhân điều khiển máy tính thực hiện công việc của nó, nó là dữ liệu trong bộ nhớ của máy tính, đồng thời nó điều khiển các hành động thực hiện trên bộ nhớ này. Những sự cố gắng so sánh các chương trình với các đối tượng quen thuộc thường có xu hướng mắc phải thiếu sót. Một cách phù hợp về hình thức là so sánh một chương trình với một cỗ máy - với rất nhiều bộ phận riêng biệt có xu hướng liên kết với nhau. Và để làm cho tổng thể hoạt động tốt, chúng ta phải xem xét cách thức mà các bộ phận này kết nối với nhau và đóng góp vào hoạt động của tổng thể.
+Một chương trình có thể là rất nhiều thứ. Nó là một đoạn văn bản do lập trình viên viết ra, nó là tác nhân điều khiển máy tính thực hiện công việc của nó, nó là dữ liệu trong bộ nhớ của máy tính, đồng thời nó điều khiển các hành động thực hiện trên bộ nhớ này. Những sự cố gắng so sánh các chương trình với các đối tượng quen thuộc thường có xu hướng mắc phải thiếu sót. Một cách phù hợp về hình thức là so sánh một chương trình với một cỗ máy—với rất nhiều bộ phận riêng biệt có xu hướng liên kết với nhau. Và để làm cho tổng thể hoạt động tốt, chúng ta phải xem xét cách thức mà các bộ phận này kết nối với nhau và đóng góp vào hoạt động của tổng thể.
 
 ((Máy tính)) là một cỗ máy vật lý đóng vai trò là chủ thể của các cỗ máy phi vật chất này. Bản thân máy tính chỉ có thể làm những việc đơn giản một cách ngu ngốc. Lý do chúng rất hữu ích là vì chúng làm những việc này với ((tốc độ)) cực kỳ cao. Một chương trình có thể khéo léo kết hợp một số lượng lớn các hành động đơn giản này để thực hiện những việc rất phức tạp.
 
@@ -66,7 +66,7 @@ Một số lập trình viên tin rằng sự phức tạp này được quản 
 
 {{index experiment}}
 
-Điều này không chỉ nhàm chán-mà lại còn kém hiệu quả. Những vấn đề mới thường đòi hỏi những giải pháp mới. Lĩnh vực lập trình còn non trẻ và vẫn đang phát triển nhanh chóng, đồng thời đủ đa dạng để có chỗ cho những cách tiếp cận cực kỳ khác nhau. Có rất nhiều sai lầm khủng khiếp có thể mắc phải trong quá trình thiết kế chương trình và bạn nên tiếp tục mắc phải chúng ít nhất một lần để hiểu chúng. Cảm giác về một chương trình tốt trông như thế nào được phát triển bằng thực hành chứ không phải học được từ danh sách các quy tắc.
+Điều này không chỉ nhàm chán—mà lại còn kém hiệu quả. Những vấn đề mới thường đòi hỏi những giải pháp mới. Lĩnh vực lập trình còn non trẻ và vẫn đang phát triển nhanh chóng, đồng thời đủ đa dạng để có chỗ cho những cách tiếp cận cực kỳ khác nhau. Có rất nhiều sai lầm khủng khiếp có thể mắc phải trong quá trình thiết kế chương trình và bạn nên tiếp tục mắc phải chúng ít nhất một lần để hiểu chúng. Cảm giác về một chương trình tốt trông như thế nào được phát triển bằng thực hành chứ không phải học được từ danh sách các quy tắc.
 
 ## Vì sao ngôn ngữ lại quan trọng
 
@@ -113,10 +113,10 @@ Mỗi dòng của chương trình trước chứa một lệnh duy nhất. Nó c
 Mặc dù điều đó đã dễ đọc hơn so với món cháo toàn bit, nhưng nó vẫn còn khá mơ hồ. Việc sử dụng tên thay vì số cho các câu lệnh và vị trí bộ nhớ sẽ giúp ích.
 
 ```{lang: "null"}
-  Đặt “tong” thành 0.
-  Đặt “sodem” thành 1.
+  Đặt “tong” là 0.
+  Đặt “sodem” là 1.
 [vonglap]
-  Đặt “sosanh” thành “sodem”.
+  Đặt “sosanh” là “sodem”.
   Trừ 11 khỏi “sosanh”.
   Nếu “sosanh” là 0, tiếptục tại [ketthuc].
   Thêm “sodem” vào “tong”.
@@ -253,7 +253,7 @@ if}}
 
 {{index "factorial function"}}
 
-Trong cuốn sách này, văn bản viết bằng phông chữ `monospaced`(đơn cách) sẽ thể hiện các thành phần của chương trình. Đôi khi đây là những đoạn tự cung cấp và đôi khi chúng chỉ đề cập đến một phần của chương trình gần đó. Các chương trình (mà bạn đã thấy một số) được viết như sau:
+Trong cuốn sách này, văn bản viết bằng phông chữ `monospaced` (đơn cách) sẽ thể hiện các thành phần của chương trình. Đôi khi đây là những đoạn tự cung cấp và đôi khi chúng chỉ đề cập đến một phần của chương trình gần đó. Các chương trình (mà bạn đã thấy một vài cái) được viết như sau:
 
 ```
 function giaithua(n) {

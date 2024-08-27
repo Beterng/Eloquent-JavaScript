@@ -1,55 +1,55 @@
 {{meta {docid: values}}}
 
-# Values, Types, and Operators
+# Giá trị, Kiểu dữ liệu và Toán tử
 
 {{quote {author: "Master Yuan-Ma", title: "The Book of Programming", chapter: true}
 
-Below the surface of the machine, the program moves. Without effort, it expands and contracts. In great harmony, electrons scatter and regroup. The forms on the monitor are but ripples on the water. The essence stays invisibly below.
+Bên dưới bề mặt của cỗ máy, chương trình di chuyển. Không cần nỗ lực, nó mở rộng và co lại. Trong sự hài hòa tuyệt vời, các electron phân tán và tập hợp lại. Các hình dạng trên màn hình chỉ là những gợn sóng trên mặt nước. Bản chất vẫn là vô hình ở bên dưới.
 
 quote}}
 
 {{index "Yuan-Ma", "Book of Programming"}}
 
-{{figure {url: "img/chapter_picture_1.jpg", alt: "Illustration of a sea of dark and bright dots (bits) with islands in it", chapter: framed}}}
+{{figure {url: "img/chapter_picture_1.jpg", alt: "Hình minh họa về một biển các chấm sáng và tối (bit) có các hòn đảo trong đó", chapter: framed}}}
 
 {{index "binary data", data, bit, memory}}
 
-In the computer's world, there is only data. You can read data, modify data, create new data—but that which isn't data cannot be mentioned. All this data is stored as long sequences of bits and is thus fundamentally alike.
+Trong thế giới máy tính, chỉ có dữ liệu. Bạn có thể đọc dữ liệu, sửa đổi dữ liệu, tạo dữ liệu mới—nhưng những thứ không phải là dữ liệu thì không thể đề cập đến. Tất cả dữ liệu này được lưu trữ dưới dạng chuỗi bit dài và do đó về cơ bản là giống nhau.
 
 {{index CD, signal}}
 
-_Bits_ are any kind of two-valued things, usually described as zeros and ones. Inside the computer, they take forms such as a high or low electrical charge, a strong or weak signal, or a shiny or dull spot on the surface of a CD. Any piece of discrete information can be reduced to a sequence of zeros and ones and thus represented in bits.
+_Bit_ là bất kỳ thứ gì có hai giá trị, thường được mô tả là số không và số một. Bên trong máy tính, chúng có các dạng như điện tích cao hoặc thấp, tín hiệu mạnh hoặc yếu, hoặc một điểm sáng hoặc mờ trên bề mặt đĩa CD. Bất kỳ thông tin rời rạc nào cũng có thể được giảm xuống thành một chuỗi số không và số một và do đó được biểu diễn bằng bit.
 
 {{index "binary number", "decimal number"}}
 
-For example, we can express the number 13 in bits. This works the same way as a decimal number, but instead of 10 different ((digit))s, we have only 2, and the weight of each increases by a factor of 2 from right to left. Here are the bits that make up the number 13, with the weights of the digits shown below them:
+Ví dụ, chúng ta có thể biểu diễn số 13 theo bit. Cách này hoạt động theo cùng một cách như số thập phân, nhưng thay vì 10 chữ số khác nhau, chúng ta chỉ có 2, và trọng số của mỗi chữ số tăng theo hệ số 2 từ phải sang trái. Sau đây là các bit tạo nên số 13, với trọng số của các chữ số được hiển thị bên dưới:
 
 ```{lang: null}
    0   0   0   0   1   1   0   1
  128  64  32  16   8   4   2   1
 ```
 
-That's the binary number 00001101. Its nonzero digits stand for 8, 4, and 1, and add up to 13.
+Đó là số nhị phân 00001101. Các chữ số khác không của nó biểu thị cho 8, 4 và 1, và tổng bằng 13.
 
-## Values
+## Giá trị
 
 {{index [memory, organization], "volatile data storage", "hard drive"}}
 
-Imagine a sea of bits—an ocean of them. A typical modern computer has more than 100 billion bits in its volatile data storage (working memory). Nonvolatile storage (the hard disk or equivalent) tends to have yet a few orders of magnitude more.
+Hãy tưởng tượng một biển bit—một đại dương bit. Một máy tính hiện đại thông thường có hơn 100 tỷ bit trong bộ lưu trữ dữ liệu dễ bay hơi (bộ nhớ làm việc). Bộ lưu trữ không dễ bay hơi (ổ cứng hoặc tương đương) có xu hướng có nhiều hơn một vài cấp độ.
 
-To be able to work with such quantities of bits without getting lost, we separate them into chunks that represent pieces of information. In a JavaScript environment, those chunks are called _((value))s_. Though all values are made of bits, they play different roles. Every value has a ((type)) that determines its role. Some values are numbers, some values are pieces of text, some values are functions, and so on.
+Để có thể làm việc với số lượng bit như vậy mà không bị mất đi, chúng ta chia chúng thành các khối biểu diễn các phần thông tin. Trong môi trường JavaScript, các khối đó được gọi là các _((giá trị))_. Mặc dù tất cả các giá trị đều được tạo thành từ bit, chúng đóng các vai trò khác nhau. Mỗi giá trị có một ((kiểu)) xác định vai trò của nó. Một số giá trị là số, một số giá trị là các phần văn bản, một số giá trị là hàm, v.v.
 
 {{index "garbage collection"}}
 
-To create a value, you must merely invoke its name. This is convenient. You don't have to gather building material for your values or pay for them. You just call for one, and _whoosh_, you have it. Of course, values are not really created from thin air. Each one has to be stored somewhere, and if you want to use a gigantic number of them at the same time, you might run out of computer memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.
+Để tạo ra một giá trị, bạn chỉ cần gọi tên của nó. Điều này rất tiện lợi. Bạn không cần phải thu thập vật liệu xây dựng cho các giá trị của mình hoặc trả tiền cho chúng. Bạn chỉ cần gọi một giá trị, và _vèo_, bạn đã có nó. Tất nhiên, các giá trị không thực sự được tạo ra từ hư không. Mỗi giá trị phải được lưu trữ ở đâu đó và nếu bạn muốn sử dụng một số lượng lớn cùng một lúc, bạn có thể hết bộ nhớ máy tính. May mắn thay, đây chỉ là vấn đề nếu bạn cần tất cả chúng cùng một lúc. Ngay khi bạn không còn sử dụng một giá trị nữa, nó sẽ biến mất, để lại các bit của nó để được tái chế làm vật liệu xây dựng cho thế hệ giá trị tiếp theo.
 
-The remainder of this chapter introduces the atomic elements of JavaScript programs, that is, the simple value types and the operators that can act on such values.
+Phần còn lại của chương này giới thiệu các thành phần nguyên tử của chương trình JavaScript, tức là các kiểu giá trị đơn giản và các toán tử có thể tác động lên các giá trị đó.
 
-## Numbers
+## Số
 
 {{index [syntax, number], number, [number, notation]}}
 
-Values of the _number_ type are, unsurprisingly, numeric values. In a JavaScript program, they are written as follows:
+Các giá trị của kiểu _số_, không có gì đáng ngạc nhiên, là các giá trị số. Trong một chương trình JavaScript, chúng được viết như sau:
 
 ```
 13
@@ -57,21 +57,21 @@ Values of the _number_ type are, unsurprisingly, numeric values. In a JavaScript
 
 {{index "binary number"}}
 
-Using that in a program will cause the bit pattern for the number 13 to come into existence inside the computer's memory.
+Sử dụng nó trong một chương trình sẽ khiến mẫu bit cho số 13 xuất hiện bên trong bộ nhớ của máy tính.
 
 {{index [number, representation], bit}}
 
-JavaScript uses a fixed number of bits, 64 of them, to store a single number value. There are only so many patterns you can make with 64 bits, which limits the number of different numbers that can be represented. With _N_ decimal ((digit))s, you can represent 10^N^ numbers. Similarly, given 64 binary digits, you can represent 2^64^ different numbers, which is about 18 quintillion (an 18 with 18 zeros after it). That's a lot.
+JavaScript sử dụng một số bit cố định, 64 bit, để lưu trữ một giá trị số duy nhất. Chỉ có một số mẫu nhất định mà bạn có thể tạo ra với 64 bit, điều này giới hạn số lượng các số khác nhau có thể được biểu diễn. Với _N_ ((chữ số) thập phân, bạn có thể biểu diễn 10^N^ số. Tương tự như vậy, với 64 chữ số nhị phân, bạn có thể biểu diễn 2^64^ số khác nhau, tức là khoảng 18 nghìn tỷ (một số 18 với 18 số không theo sau). Quá lớn.
 
-Computer memory used to be much smaller, and people tended to use groups of 8 or 16 bits to represent their numbers. It was easy to accidentally _((overflow))_ such small numbers—to end up with a number that did not fit into the given number of bits. Today, even computers that fit in your pocket have plenty of memory, so you are free to use 64-bit chunks, and you need to worry about overflow only when dealing with truly astronomical numbers.
+Bộ nhớ máy tính trước đây nhỏ hơn nhiều, và mọi người có xu hướng sử dụng nhóm 8 hoặc 16 bit để biểu diễn số của họ. Thật dễ dàng để vô tình _((tràn))_ những con số nhỏ như vậy—để kết thúc bằng một con số không vừa với số bit đã cho. Ngày nay, ngay cả những máy tính vừa vặn trong túi của bạn cũng có rất nhiều bộ nhớ, vì vậy bạn có thể thoải mái sử dụng các khối 64 bit, và bạn chỉ cần lo lắng về việc tràn khi xử lý các con số thực sự lớn.
 
 {{index sign, "floating-point number", "sign bit"}}
 
-Not all whole numbers less than 18 quintillion fit in a JavaScript number, though. Those bits also store negative numbers, so one bit indicates the sign of the number. A bigger issue is representing nonwhole numbers. To do this, some of the bits are used to store the position of the decimal point. The actual maximum whole number that can be stored is more in the range of 9 quadrillion (15 zeros)—which is still pleasantly huge.
+Tuy nhiên, không phải tất cả các số nguyên nhỏ hơn 18 nghìn tỷ đều phù hợp với số JavaScript. Các bit đó cũng lưu trữ các số âm, vì vậy một bit biểu thị dấu của số. Một vấn đề lớn hơn là biểu diễn các số không nguyên. Để làm điều này, một số bit được sử dụng để lưu trữ vị trí của dấu thập phân. Số nguyên tối đa thực tế có thể được lưu trữ nằm trong phạm vi 9 nghìn tỷ (15 số không)—vẫn là một con số lớn dễ chịu.
 
 {{index [number, notation], "fractional number"}}
 
-Fractional numbers are written using a dot:
+Số thập phân được viết bằng dấu chấm:
 
 ```
 9.81
@@ -79,23 +79,23 @@ Fractional numbers are written using a dot:
 
 {{index exponent, "scientific notation", [number, notation]}}
 
-For very big or very small numbers, you may also use scientific notation by adding an _e_ (for _exponent_), followed by the exponent of the number.
+Đối với các số rất lớn hoặc rất nhỏ, bạn cũng có thể sử dụng ký hiệu khoa học bằng cách thêm _e_ (cho _số mũ_), theo sau là số mũ của số đó.
 
 ```
 2.998e8
 ```
 
-That's 2.998 × 10^8^ = 299,800,000.
+Tức là 2.998 × 10^8^ = 299,800,000.
 
 {{index pi, [number, "precision of"], "floating-point number"}}
 
-Calculations with whole numbers (also called _((integer))s_) that are smaller than the aforementioned 9 quadrillion are guaranteed to always be precise. Unfortunately, calculations with fractional numbers are generally not. Just as π (pi) cannot be precisely expressed by a finite number of decimal digits, many numbers lose some precision when only 64 bits are available to store them. This is a shame, but it causes practical problems only in specific situations. The important thing is to be aware of it and treat fractional digital numbers as approximations, not as precise values.
+Các phép tính với số tự nhiên (còn gọi là _((số nguyên))_) nhỏ hơn 9 nghìn tỷ đã đề cập ở trên được đảm bảo luôn chính xác. Thật không may, các phép tính với số phân số thường không chính xác. Cũng giống như π (pi) không thể được biểu thị chính xác bằng một số hữu hạn các chữ số thập phân, nhiều số mất đi một số độ chính xác khi chỉ có 64 bit để lưu trữ chúng. Đây là điều đáng tiếc, nhưng nó chỉ gây ra các vấn đề thực tế trong những tình huống cụ thể. Điều quan trọng là phải nhận thức được điều đó và coi các số kỹ thuật số phân số là các phép tính gần đúng, không phải là các giá trị chính xác.
 
-### Arithmetic
+### Số học
 
 {{index [syntax, operator], operator, "binary operator", arithmetic, addition, multiplication}}
 
-The main thing to do with numbers is arithmetic. Arithmetic operations such as addition or multiplication take two number values and produce a new number from them. Here is what they look like in JavaScript:
+Điều chủ yếu cần làm với các con số là thực hiện số học. Các phép toán số học như phép cộng hoặc phép nhân lấy hai giá trị số và tạo ra một số mới từ chúng. Đây là những gì chúng trông như thế nào trong JavaScript:
 
 ```{meta: "expr"}
 100 + 4 * 11
@@ -103,11 +103,11 @@ The main thing to do with numbers is arithmetic. Arithmetic operations such as a
 
 {{index [operator, application], asterisk, "plus character", "* operator", "+ operator"}}
 
-The `+` and `*` symbols are called _operators_. The first stands for addition and the second stands for multiplication. Putting an operator between two values will apply it to those values and produce a new value.
+Các ký hiệu `+` và `*` được gọi là _toán tử_. Ký hiệu đầu tiên dùng để cộng và ký hiệu thứ hai dùng để nhân. Đặt một toán tử giữa hai giá trị sẽ áp dụng toán tử đó cho các giá trị đó và tạo ra một giá trị mới.
 
 {{index grouping, parentheses, precedence}}
 
-Does this example mean "Add 4 and 100, and multiply the result by 11", or is the multiplication done before the adding? As you might have guessed, the multiplication happens first. As in mathematics, you can change this by wrapping the addition in parentheses.
+Liệu ví dụ này có nghĩa là "Cộng 4 và 100, rồi nhân kết quả với 11", hay phép nhân được thực hiện trước phép cộng? Như bạn có thể đoán, phép nhân xảy ra trước. Giống như trong toán học, bạn có thể thay đổi điều này bằng cách đặt phép cộng trong dấu ngoặc đơn.
 
 ```{meta: "expr"}
 (100 + 4) * 11
@@ -115,33 +115,33 @@ Does this example mean "Add 4 and 100, and multiply the result by 11", or is the
 
 {{index "hyphen character", "slash character", division, subtraction, minus, "- operator", "/ operator"}}
 
-For subtraction, there is the `-` operator. Division can be done with the `/` operator.
+Đối với phép trừ, có toán tử `-`. Phép chia có thể được thực hiện bằng toán tử `/`.
 
-When operators appear together without parentheses, the order in which they are applied is determined by the _((precedence))_ of the operators. The example shows that multiplication comes before addition. The `/` operator has the same precedence as `*`. Likewise, `+` and `-` have the same precedence. When multiple operators with the same precedence appear next to each other, as in `1 - 2 + 1`, they are applied left to right: `(1 - 2) + 1`.
+Khi các toán tử xuất hiện cùng nhau mà không có dấu ngoặc đơn, thứ tự áp dụng của chúng được xác định bởi _((thứ tự ưu tiên))_ của các toán tử. Ví dụ cho thấy phép nhân đứng trước phép cộng. Toán tử `/` có cùng thứ tự ưu tiên với `*`. Tương tự như vậy, `+` và `-` có cùng thứ tự ưu tiên. Khi nhiều toán tử có cùng thứ tự ưu tiên xuất hiện cạnh nhau, như trong `1 - 2 + 1`, chúng sẽ được áp dụng từ trái sang phải: `(1 - 2) + 1`.
 
-Don't worry too much about these precedence rules. When in doubt, just add parentheses.
+Đừng lo lắng quá nhiều về các quy tắc ưu tiên này. Nếu còn nghi ngờ, chỉ cần thêm dấu ngoặc đơn.
 
 {{index "modulo operator", division, "remainder operator", "% operator"}}
 
-There is one more arithmetic operator, which you might not immediately recognize. The `%` symbol is used to represent the _remainder_ operation. `X % Y` is the remainder of dividing `X` by `Y`. For example, `314 % 100` produces `14`, and `144 % 12` gives `0`. The remainder operator's precedence is the same as that of multiplication and division. You'll also often see this operator referred to as _modulo_.
+Có một toán tử số học nữa mà bạn có thể không nhận ra ngay. Ký hiệu `%` được sử dụng để biểu diễn phép toán _phần dư_. `X % Y` là phần dư của phép chia `X` cho `Y`. Ví dụ, `314 % 100` tạo ra `14`, và `144 % 12` tạo ra `0`. Thứ tự ưu tiên của toán tử phần dư giống như phép nhân và phép chia. Bạn cũng thường thấy toán tử này được gọi là _modulo_ (chia lấy dư).
 
 ### Special numbers
 
 {{index [number, "special values"], infinity}}
 
-There are three special values in JavaScript that are considered numbers but don't behave like normal numbers. The first two are `Infinity` and `-Infinity`, which represent the positive and negative infinities. `Infinity - 1` is still `Infinity`, and so on. Don't put too much trust in infinity-based computation, though. It isn't mathematically sound, and it will quickly lead to the next special number: `NaN`.
+Có ba giá trị đặc biệt trong JavaScript được coi là số nhưng không hoạt động như số bình thường. Hai giá trị đầu tiên là `Infinity` và `-Infinity`, biểu diễn vô cực dương và âm. `Infinity - 1` vẫn là `Infinity`, v.v. Tuy nhiên, đừng quá tin tưởng vào phép tính dựa trên vô cực. Về mặt toán học, nó không hợp lý và sẽ nhanh chóng dẫn đến số đặc biệt tiếp theo: `NaN`.
 
 {{index NaN, "not a number", "division by zero"}}
 
-`NaN` stands for "not a number", even though it _is_ a value of the number type. You'll get this result when you, for example, try to calculate `0 / 0` (zero divided by zero), `Infinity - Infinity`, or any number of other numeric operations that don't yield a meaningful result.
+`NaN` có nghĩa là "không phải là số", mặc dù nó _là_ giá trị của kiểu số. Bạn sẽ nhận được kết quả này khi bạn, ví dụ, cố gắng tính toán `0 / 0` (số không chia cho số không), `Vô cực - Vô cực` hoặc bất kỳ số lượng phép toán số nào khác không tạo ra kết quả có nghĩa.
 
-## Strings
+## Chuỗi
 
 {{indexsee "grave accent", backtick}}
 
 {{index [syntax, string], text, character, [string, notation], "single-quote character", "double-quote character", "quotation mark", backtick}}
 
-The next basic data type is the _((string))_. Strings are used to represent text. They are written by enclosing their content in quotes.
+Kiểu dữ liệu cơ bản tiếp theo là _((chuỗi)) (string)_. Chuỗi được sử dụng để biểu diễn văn bản. Chúng được viết bằng cách đặt nội dung của chúng trong dấu ngoặc kép.
 
 ```
 `Down on the sea`
@@ -149,31 +149,31 @@ The next basic data type is the _((string))_. Strings are used to represent text
 'Float on the ocean'
 ```
 
-You can use single quotes, double quotes, or backticks to mark strings, as long as the quotes at the start and the end of the string match.
+Bạn có thể sử dụng dấu ngoặc đơn, dấu ngoặc kép hoặc dấu ngoặc kép ngược để đánh dấu chuỗi, miễn là dấu ngoặc kép ở đầu và cuối chuỗi khớp với nhau.
 
 {{index "line break", "newline character"}}
 
-You can put almost anything between quotes to have JavaScript make a string value out of it. But a few characters are more difficult. You can imagine how putting quotes between quotes might be hard, since they will look like the end of the string. _Newlines_ (the characters you get when you press [enter]{keyname}) can be included only when the string is quoted with backticks (`` ` ``).
+Bạn có thể đặt hầu như bất kỳ thứ gì giữa các dấu ngoặc kép để JavaScript tạo ra một giá trị chuỗi từ nó. Nhưng một vài ký tự thì khó hơn. Bạn có thể tưởng tượng việc đặt dấu ngoặc kép giữa các dấu ngoặc kép có thể khó như thế nào, vì chúng sẽ trông giống như phần cuối của chuỗi. _Dòng mới_ (các ký tự bạn nhận được khi nhấn [enter]{keyname}) chỉ có thể được bao gồm khi chuỗi được trích dẫn bằng dấu ngoặc kép ngược (`` ` ``).
 
 {{index [escaping, "in strings"], ["backslash character", "in strings"]}}
 
-To make it possible to include such characters in a string, the following notation is used: a backslash (`\`) inside quoted text indicates that the character after it has a special meaning. This is called _escaping_ the character. A quote that is preceded by a backslash will not end the string but be part of it. When an `n` character occurs after a backslash, it is interpreted as a newline. Similarly, a `t` after a backslash means a ((tab character)). Take the following string:
+Đeể có thể đưa các ký tự như vậy vào một chuỗi, ký hiệu sau được sử dụng: một dấu gạch chéo ngược (`\`) bên trong văn bản được trích dẫn chỉ ra rằng ký tự sau nó có một ý nghĩa đặc biệt. Điều này được gọi là _thoát_ ký tự. Một dấu ngoặc kép được đặt trước bởi một dấu gạch chéo ngược sẽ không kết thúc chuỗi mà là một phần của chuỗi. Khi một ký tự `n` xuất hiện sau một dấu gạch chéo ngược, nó được hiểu là một dòng mới. Tương tự, một dấu `t` sau một dấu gạch chéo ngược có nghĩa là một ((ký tự tab)). Lấy ví dụ chuỗi sau:
 
 ```
-"This is the first line\nAnd this is the second"
+"Đây là dòng đầu tiên\nVà đây là dòng thứ hai"
 ```
 
-This is the actual text in that string:
+Đây là văn bản thực tế trong chuỗi đó:
 
 ```{lang: null}
-This is the first line
-And this is the second
+Đây là dòng đầu tiên
+Và đây là dòng thứ hai
 ```
 
-There are, of course, situations where you want a backslash in a string to be just a backslash, not a special code. If two backslashes follow each other, they will collapse together, and only one will be left in the resulting string value. This is how the string "_A newline character is written like `"`\n`"`._" can be expressed:
+Tất nhiên, có những trường hợp bạn muốn dấu gạch chéo ngược trong chuỗi chỉ là một dấu gạch chéo, không phải là một mã đặc biệt. Nếu hai dấu gạch chéo ngược đi liền nhau, chúng sẽ triệt tiêu nhau và chỉ còn lại một dấu gạch chéo trong giá trị chuỗi kết quả. Đây là cách chuỗi "_Một ký tự xuống dòng được viết như thế này `"`\n`"`._" có thể được diễn đạt:
 
 ```
-"A newline character is written like \"\\n\"."
+"Một ký tự xuống dòng được viết như thế này \"\\n\"."
 ```
 
 {{id unicode}}
