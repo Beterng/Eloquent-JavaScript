@@ -118,12 +118,12 @@ Mặc dù điều đó đã dễ đọc hơn so với món cháo toàn bit, như
 [vonglap]
   Đặt “sosanh” là “sodem”.
   Trừ 11 khỏi “sosanh”.
-  Nếu “sosanh” là 0, tiếptục tại [ketthuc].
+  Nếu “sosanh” là 0, tiếp tục tại [ketthuc].
   Thêm “sodem” vào “tong”.
   Thêm 1 vào “sodem”.
-  Tiếptục tại [vonglap].
-[kếtthúc]
-  Xuấtra “tong”.
+  Tiếp tục tại [vonglap].
+[ketthuc]
+  Xuất ra “tong”.
 ```
 
 {{index loop, jump, "summing example"}}
