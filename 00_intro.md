@@ -4,13 +4,13 @@
 
 {{quote {author: "Ellen Ullman", title: "Close to the Machine: Technophilia and Its Discontents", chapter: true}
 
-Chúng ta nghĩ rằng chúng ta đang tạo ra hệ thống cho mục đích riêng, và tin rằng nó được tạo ra theo hình ảnh của  chính bản thân mình... Nhưng máy tính không thực sự giống chúng ta. Nó là sự phản chiếu của một phần rất nhỏ trong chúng ta: phần dành cho logic, trật tự, quy tắc và sự rõ ràng.
+Chúng ta nghĩ rằng chúng ta đang tạo ra hệ thống cho mục đích riêng, và tin rằng nó được tạo ra theo hình ảnh của chính bản thân mình... Nhưng máy tính thì không thực sự giống vậy. Nó là sự phản chiếu của một phần rất nhỏ trong chúng ta: phần dành cho logic, trật tự, quy tắc và sự rõ ràng.
 
 quote}}
 
 {{figure {url: "img/chapter_picture_00.jpg", alt: "Hình minh họa chiếc tua vít bên cạnh bảng mạch có cùng kích thước", chapter: "framed"}}}
 
-Cuốn sách này là về việc ra lệnh cho ((máy tính)). Máy tính hiện nay phổ biến không khác gì những chiếc tua vít vậy, nhưng nó có phần phức tạp hơn, và điều khiển chúng làm theo ý mình không phải lúc nào cũng dễ.
+Cuốn sách này nói về việc ra lệnh cho ((máy tính)). Máy tính hiện nay phổ biến không khác gì những chiếc tua vít vậy, nhưng nó có phần phức tạp hơn, và điều khiển chúng làm theo ý mình không phải lúc nào cũng dễ.
 
 Nếu nhiệm vụ bạn giao cho máy tính là một công việc thông thường và dễ hiểu, ví dụ như hiển thị email hoặc làm việc như một chiếc máy tính cầm tay, bạn chỉ cần mở ((ứng dụng)) thích hợp và vào việc. Nhưng đối với các nhiệm vụ đặc biệt hoặc không có kết thúc rõ ràng thì thường không có các ứng dụng thích hợp như vậy.
 

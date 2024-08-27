@@ -14,7 +14,7 @@ quote}}
 
 {{index "binary data", data, bit, memory}}
 
-Trong thế giới máy tính, chỉ có dữ liệu. Bạn có thể đọc dữ liệu, sửa đổi dữ liệu, tạo dữ liệu mới—nhưng những thứ không phải là dữ liệu thì không thể đề cập đến. Tất cả dữ liệu này được lưu trữ dưới dạng chuỗi bit dài và do đó về cơ bản là giống nhau.
+Trong thế giới máy tính, chỉ có dữ liệu. Bạn có thể đọc dữ liệu, sửa đổi dữ liệu, tạo dữ liệu mới—nhưng những thứ không phải là dữ liệu thì sẽ không được đề cập đến. Tất cả dữ liệu này được lưu trữ dưới dạng chuỗi bit dài và do đó về cơ bản là giống nhau.
 
 {{index CD, signal}}
 
@@ -35,7 +35,7 @@ Ví dụ, chúng ta có thể biểu diễn số 13 theo bit. Cách này hoạt 
 
 {{index [memory, organization], "volatile data storage", "hard drive"}}
 
-Hãy tưởng tượng một biển bit—một đại dương bit. Một máy tính hiện đại thông thường có hơn 100 tỷ bit trong bộ lưu trữ dữ liệu dễ bay hơi (bộ nhớ làm việc). Bộ lưu trữ không dễ bay hơi (ổ cứng hoặc tương đương) có xu hướng có nhiều hơn một vài cấp độ.
+Hãy tưởng tượng một biển bit—một đại dương bit. Một máy tính hiện đại thông thường có hơn 100 tỷ bit trong bộ lưu trữ dữ liệu dễ bay hơi (bộ nhớ làm việc). Bộ lưu trữ không dễ bay hơi (ổ cứng hoặc tương đương) có xu hướng có nhiều hơn một vài mức độ.
 
 Để có thể làm việc với số lượng bit như vậy mà không bị mất đi, chúng ta chia chúng thành các khối biểu diễn các phần thông tin. Trong môi trường JavaScript, các khối đó được gọi là các _((giá trị))_. Mặc dù tất cả các giá trị đều được tạo thành từ bit, chúng đóng các vai trò khác nhau. Mỗi giá trị có một ((kiểu)) xác định vai trò của nó. Một số giá trị là số, một số giá trị là các phần văn bản, một số giá trị là hàm, v.v.
 
@@ -61,9 +61,9 @@ Sử dụng nó trong một chương trình sẽ khiến mẫu bit cho số 13 x
 
 {{index [number, representation], bit}}
 
-JavaScript sử dụng một số bit cố định, 64 bit, để lưu trữ một giá trị số duy nhất. Chỉ có một số mẫu nhất định mà bạn có thể tạo ra với 64 bit, điều này giới hạn số lượng các số khác nhau có thể được biểu diễn. Với _N_ ((chữ số) thập phân, bạn có thể biểu diễn 10^N^ số. Tương tự như vậy, với 64 chữ số nhị phân, bạn có thể biểu diễn 2^64^ số khác nhau, tức là khoảng 18 nghìn tỷ (một số 18 với 18 số không theo sau). Quá lớn.
+JavaScript sử dụng một số bit cố định, 64 bit, để lưu trữ một giá trị số duy nhất. Chỉ có một số mẫu nhất định mà bạn có thể tạo ra với 64 bit, điều này giới hạn số lượng các số khác nhau có thể được biểu diễn. Với _N_ ((chữ số)) thập phân, bạn có thể biểu diễn 10^N^ số. Tương tự như vậy, với 64 chữ số nhị phân, bạn có thể biểu diễn 2^64^ số khác nhau, tức là khoảng 18 nghìn tỷ (một số 18 với 18 số không theo sau). Quá lớn.
 
-Bộ nhớ máy tính trước đây nhỏ hơn nhiều, và mọi người có xu hướng sử dụng nhóm 8 hoặc 16 bit để biểu diễn số của họ. Thật dễ dàng để vô tình _((tràn))_ những con số nhỏ như vậy—để kết thúc bằng một con số không vừa với số bit đã cho. Ngày nay, ngay cả những máy tính vừa vặn trong túi của bạn cũng có rất nhiều bộ nhớ, vì vậy bạn có thể thoải mái sử dụng các khối 64 bit, và bạn chỉ cần lo lắng về việc tràn khi xử lý các con số thực sự lớn.
+Bộ nhớ máy tính trước đây nhỏ hơn nhiều, và mọi người có xu hướng sử dụng các nhóm 8 hoặc 16 bit để biểu diễn số của họ. Thật dễ dàng để vô tình _((tràn))_ những con số nhỏ như vậy—để kết thúc bằng một con số không vừa với số bit đã cho. Ngày nay, ngay cả những máy tính vừa vặn trong túi của bạn cũng có rất nhiều bộ nhớ, vì vậy bạn có thể thoải mái sử dụng các khối 64 bit, và bạn chỉ cần lo lắng về việc tràn khi xử lý các con số thực sự lớn.
 
 {{index sign, "floating-point number", "sign bit"}}
 
@@ -125,7 +125,7 @@ Khi các toán tử xuất hiện cùng nhau mà không có dấu ngoặc đơn,
 
 Có một toán tử số học nữa mà bạn có thể không nhận ra ngay. Ký hiệu `%` được sử dụng để biểu diễn phép toán _phần dư_. `X % Y` là phần dư của phép chia `X` cho `Y`. Ví dụ, `314 % 100` tạo ra `14`, và `144 % 12` tạo ra `0`. Thứ tự ưu tiên của toán tử phần dư giống như phép nhân và phép chia. Bạn cũng thường thấy toán tử này được gọi là _modulo_ (chia lấy dư).
 
-### Special numbers
+### Các số đặc biệt
 
 {{index [number, "special values"], infinity}}
 
@@ -144,9 +144,9 @@ Có ba giá trị đặc biệt trong JavaScript được coi là số nhưng kh
 Kiểu dữ liệu cơ bản tiếp theo là _((chuỗi)) (string)_. Chuỗi được sử dụng để biểu diễn văn bản. Chúng được viết bằng cách đặt nội dung của chúng trong dấu ngoặc kép.
 
 ```
-`Down on the sea`
-"Lie on the ocean"
-'Float on the ocean'
+`Xuống dưới biển sâu`
+"Nằm trên sóng trôi"
+'Trôi giữa biển khơi'
 ```
 
 Bạn có thể sử dụng dấu ngoặc đơn, dấu ngoặc kép hoặc dấu ngoặc kép ngược để đánh dấu chuỗi, miễn là dấu ngoặc kép ở đầu và cuối chuỗi khớp với nhau.
@@ -157,7 +157,7 @@ Bạn có thể đặt hầu như bất kỳ thứ gì giữa các dấu ngoặc
 
 {{index [escaping, "in strings"], ["backslash character", "in strings"]}}
 
-Đeể có thể đưa các ký tự như vậy vào một chuỗi, ký hiệu sau được sử dụng: một dấu gạch chéo ngược (`\`) bên trong văn bản được trích dẫn chỉ ra rằng ký tự sau nó có một ý nghĩa đặc biệt. Điều này được gọi là _thoát_ ký tự. Một dấu ngoặc kép được đặt trước bởi một dấu gạch chéo ngược sẽ không kết thúc chuỗi mà là một phần của chuỗi. Khi một ký tự `n` xuất hiện sau một dấu gạch chéo ngược, nó được hiểu là một dòng mới. Tương tự, một dấu `t` sau một dấu gạch chéo ngược có nghĩa là một ((ký tự tab)). Lấy ví dụ chuỗi sau:
+Để có thể đưa các ký tự như vậy vào một chuỗi, ký hiệu sau được sử dụng: một dấu gạch chéo ngược (`\`) bên trong văn bản được trích dẫn chỉ ra rằng ký tự sau nó có một ý nghĩa đặc biệt. Việc này được gọi là _thoát_ ký tự. Một dấu ngoặc kép được đặt trước bởi một dấu gạch chéo ngược sẽ không kết thúc chuỗi mà là một phần của chuỗi. Khi một ký tự `n` xuất hiện sau một dấu gạch chéo ngược, nó được hiểu là một dòng mới. Tương tự, một dấu `t` sau một dấu gạch chéo ngược có nghĩa là một ((ký tự tab)). Lấy ví dụ chuỗi sau:
 
 ```
 "Đây là dòng đầu tiên\nVà đây là dòng thứ hai"
@@ -180,37 +180,37 @@ Tất nhiên, có những trường hợp bạn muốn dấu gạch chéo ngư�
 
 {{index [string, representation], Unicode, character}}
 
-Strings, too, have to be modeled as a series of bits to be able to exist inside the computer. The way JavaScript does this is based on the _((Unicode))_ standard. This standard assigns a number to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers. And that's what JavaScript does.
+Các chuỗi cũng phải được mô hình hóa thành một chuỗi bit để có thể tồn tại bên trong máy tính. Cách JavaScript thực hiện điều này dựa trên tiêu chuẩn _((Unicode))_. Tiêu chuẩn này gán một con số cho hầu hết mọi ký tự mà bạn cần, bao gồm các ký tự từ tiếng Hy Lạp, tiếng Ả Rập, tiếng Nhật, tiếng Armenia, tiếng Việt, v.v. Nếu chúng ta có một số cho mỗi ký tự thì một chuỗi có thể được mô tả bằng một dãy số. Và đó là những gì JavaScript làm.
 
 {{index "UTF-16", emoji}}
 
-There's a complication though: JavaScript's representation uses 16 bits per string element, which can describe up to 2^16^ different characters. However, Unicode defines more characters than that—about twice as many, at this point. So some characters, such as many emoji, take up two "character positions" in JavaScript strings. We'll come back to this in [Chapter ?](higher_order#code_units).
+Tuy nhiên, có một điều phức tạp: cách biểu diễn của JavaScript sử dụng 16 bit cho mỗi phần tử chuỗi, tức là có thể mô tả tối đa 2^16^ ký tự khác nhau. Tuy nhiên, Unicode lại định nghĩa nhiều ký tự hơn thế—hiện tại, có nhiều ký tự chiếm khoảng gấp đôi. Vì vậy, một số ký tự, chẳng hạn như nhiều biểu tượng cảm xúc, chiếm hai "vị trí ký tự" trong chuỗi JavaScript. Chúng ta sẽ quay lại vấn đề này trong [Chương ?](higher_order#code_units).
 
 {{index "+ operator", concatenation}}
 
-Strings cannot be divided, multiplied, or subtracted. The `+` operator _can_ be used on them, not to add, but to _concatenate_—to glue two strings together. The following line will produce the string `"concatenate"`:
+Chuỗi không thể được đem đi chia, nhân hoặc trừ. Toán tử `+` _có thể_ được sử dụng trên chúng, không phải để cộng thêm mà để _nối_—để gắn hai chuỗi lại với nhau. Dòng sau sẽ tạo ra chuỗi `"nốichuỗi"`:
 
 ```{meta: "expr"}
-"con" + "cat" + "e" + "nate"
+"nối" + "ch" + "u" + "ỗi"
 ```
 
-String values have a number of associated functions (_methods_) that can be used to perform other operations on them. I'll say more about these in [Chapter ?](data#methods).
+Các giá trị chuỗi có đi kèm thêm một số hàm (_phương thức_) có thể được sử dụng để thực hiện các thao tác khác trên chúng. Tôi sẽ nói thêm về những điều này trong [Chương ?](data#methods).
 
 {{index interpolation, backtick}}
 
-Strings written with single or double quotes behave very much the same—the only difference lies in which type of quote you need to escape inside of them. Backtick-quoted strings, usually called _((template literals))_, can do a few more tricks. Apart from being able to span lines, they can also embed other values.
+Các chuỗi được viết bằng dấu ngoặc đơn hoặc dấu ngoặc kép hoạt động rất giống nhau—sự khác biệt duy nhất nằm ở kiểu dấu ngoặc kép mà bạn cần thoát bên trong chúng. Các chuỗi có dấu ngoặc ngược, thường được gọi là _((chữ mẫu))_, có thể thực hiện thêm một số thủ thuật. Ngoài khả năng kéo dài các dòng, chúng còn có thể nhúng các giá trị khác.
 
 ```{meta: "expr"}
-`half of 100 is ${100 / 2}`
+`một nửa của 100 là ${100 / 2}`
 ```
 
-When you write something inside `${}` in a template literal, its result will be computed, converted to a string, and included at that position. This example produces the string `"half of 100 is 50"`.
+Khi bạn viết nội dung nào đó bên trong `${}` theo dạng chữ mẫu, kết quả của nó sẽ được tính toán, chuyển đổi thành chuỗi và được đưa vào vị trí đó. Ví dụ này tạo ra chuỗi `"một nửa của 100 là 50"`.
 
-## Unary operators
+## Toán tử một ngôi
 
 {{index operator, "typeof operator", type}}
 
-Not all operators are symbols. Some are written as words. One example is the `typeof` operator, which produces a string value naming the type of the value you give it.
+Không phải tất cả các toán tử đều là ký hiệu. Một số được viết dưới dạng từ. Một ví dụ là toán tử `typeof`, toán tử này tạo ra một giá trị chuỗi là tên được đặt cho kiểu giá trị bạn cung cấp cho nó.
 
 ```
 console.log(typeof 4.5)
@@ -223,28 +223,28 @@ console.log(typeof "x")
 
 {{id "console.log"}}
 
-We will use `console.log` in example code to indicate that we want to see the result of evaluating something. (More about that in the [next chapter](program_structure).)
+Chúng ta sẽ sử dụng `console.log` trong mã ví dụ để cho biết rằng chúng ta muốn xem kết quả của việc tính toán một cái gì đó. (Thêm về điều đó trong [chương tiếp theo](program_structure).)
 
 {{index negation, "- operator", "binary operator", "unary operator"}}
 
-The other operators shown so far in this chapter all operated on two values, but `typeof` takes only one. Operators that use two values are called _binary_ operators, while those that take one are called _unary_ operators. The minus operator (`-`) can be used both as a binary operator and as a unary operator.
+Các toán tử được trình bày trong chương này đều hoạt động trên hai giá trị, nhưng `typeof` chỉ nhận một giá trị. Các toán tử sử dụng hai giá trị được gọi là toán tử _hai ngôi_, trong khi các toán tử lấy một giá trị được gọi là toán tử _một ngôi_. Toán tử trừ (`-`) có thể được sử dụng làm toán tử hai ngôi và toán tử một ngôi.
 
 ```
 console.log(- (10 - 2))
 // → -8
 ```
 
-## Boolean values
+## Giá trị Boolean
 
 {{index Boolean, operator, true, false, bit}}
 
-It is often useful to have a value that distinguishes between only two possibilities, like "yes" and "no" or "on" and "off". For this purpose, JavaScript has a _Boolean_ type, which has just two values, true and false, written as those words.
+Thông thường sẽ rất hữu ích khi có một giá trị chỉ phân biệt giữa hai khả năng, như "có" và "không" hoặc "bật" và "tắt". Với mục đích này, JavaScript có kiểu _Boolean_ (đúng sai) chỉ có hai giá trị, true (đúng) và false (sai), được viết dưới dạng những từ đó.
 
-### Comparison
+### So sánh
 
 {{index comparison}}
 
-Here is one way to produce Boolean values:
+Đây là một cách để tạo ra các giá trị Boolean:
 
 ```
 console.log(3 > 2)
@@ -255,50 +255,50 @@ console.log(3 < 2)
 
 {{index [comparison, "of numbers"], "> operator", "< operator", "greater than", "less than"}}
 
-The `>` and `<` signs are the traditional symbols for "is greater than" and "is less than", respectively. They are binary operators. Applying them results in a Boolean value that indicates whether they hold true in this case.
+Các dấu `>` và `<` lần lượt là các ký hiệu truyền thống cho "lớn hơn" và "nhỏ hơn". Chúng là các toán tử nhị phân. Việc áp dụng chúng sẽ tạo ra giá trị Boolean cho biết liệu chúng có đúng trong trường hợp này hay không.
 
-Strings can be compared in the same way.
+Các chuỗi cũng có thể được so sánh theo cách tương tự.
 
 ```
-console.log("Aardvark" < "Zoroaster")
+console.log("Angiang" < "Yenbai")
 // → true
 ```
 
 {{index [comparison, "of strings"]}}
 
-The way strings are ordered is roughly alphabetic but not really what you'd expect to see in a dictionary: uppercase letters are always "less" than lowercase ones, so `"Z" < "a"`, and nonalphabetic characters (!, -, and so on) are also included in the ordering. When comparing strings, JavaScript goes over the characters from left to right, comparing the ((Unicode)) codes one by one.
+Cách sắp xếp các chuỗi gần như theo thứ tự chữ cái nhưng nó không thực sự như những gì bạn thấy trong từ điển: các chữ cái viết hoa luôn "nhỏ hơn" các chữ cái viết thường, vì vậy `"Z" < "a"` và các ký tự không phải chữ cái (!, -, v.v.) cũng được bao gồm trong thứ tự. Khi so sánh các chuỗi, JavaScript sẽ duyệt qua các ký tự từ trái sang phải, so sánh từng mã ((Unicode)) theo từng ký tự một.
 
 {{index equality, ">= operator", "<= operator", "== operator", "!= operator"}}
 
-Other similar operators are `>=` (greater than or equal to), `<=` (less than or equal to), `==` (equal to), and `!=` (not equal to).
+Các toán tử tương tự khác bao gồm `>=` (lớn hơn hoặc bằng), `<=` (nhỏ hơn hoặc bằng), `==` (bằng) và `!=` (không bằng).
 
 ```
-console.log("Garnet" != "Ruby")
+console.log("Vangbac" != "Chaubau")
 // → true
-console.log("Pearl" == "Amethyst")
+console.log("Banhchung" == "Banhgiay")
 // → false
 ```
 
 {{index [comparison, "of NaN"], NaN}}
 
-There is only one value in JavaScript that is not equal to itself, and that is `NaN` ("not a number").
+Chỉ có một giá trị trong JavaScript không bằng chính nó và đó là `NaN` ("không phải là số").
 
 ```
 console.log(NaN == NaN)
 // → false
 ```
 
-`NaN` is supposed to denote the result of a nonsensical computation, and as such, it isn't equal to the result of any _other_ nonsensical computations.
+`NaN` được coi là biểu thị kết quả của một phép tính vô nghĩa và do đó, nó không bằng kết quả của bất kỳ phép tính vô nghĩa _khác_ nào.
 
-### Logical operators
+### Toán tử logic
 
 {{index reasoning, "logical operators"}}
 
-There are also some operations that can be applied to Boolean values themselves. JavaScript supports three logical operators: _and_, _or_, and _not_. These can be used to "reason" about Booleans.
+Ngoài ra còn có một số thao tác có thể được áp dụng cho chính các giá trị Boolean. JavaScript hỗ trợ ba toán tử logic: _và_, _hoặc_ và _trái_. Chúng có thể được sử dụng để "lý luận" về Booleans.
 
 {{index "&& operator", "logical and"}}
 
-The `&&` operator represents logical _and_. It is a binary operator, and its result is true only if both the values given to it are true.
+Toán tử `&&` biểu thị logic _và_. Nó là một toán tử hai ngôi và kết quả của nó chỉ đúng nếu cả hai giá trị được cung cấp cho nó đều đúng.
 
 ```
 console.log(true && false)
@@ -309,7 +309,7 @@ console.log(true && true)
 
 {{index "|| operator", "logical or"}}
 
-The `||` operator denotes logical _or_. It produces true if either of the values given to it is true.
+Toán tử `||` biểu thị logic _hoặc_. Nó tạo ra true nếu một trong hai giá trị được cung cấp cho nó là true.
 
 ```
 console.log(false || true)
@@ -320,11 +320,11 @@ console.log(false || false)
 
 {{index negation, "! operator"}}
 
-_Not_ is written as an exclamation mark (`!`). It is a unary operator that flips the value given to it—`!true` produces `false` and `!false` gives `true`.
+_Trái_ được viết dưới dạng dấu chấm than (`!`). Nó là một toán tử một ngôi lật giá trị được gán cho nó—`!true` tạo ra `false` và `!false` cho ra `true`.
 
 {{index precedence}}
 
-When mixing these Boolean operators with arithmetic and other operators, it is not always obvious when parentheses are needed. In practice, you can usually get by with knowing that of the operators we have seen so far, `||` has the lowest precedence, then comes `&&`, then the comparison operators (`>`, `==`, and so on), and then the rest. This order has been chosen such that, in typical expressions like the following one, as few parentheses as possible are necessary:
+Khi xen lẫn các toán tử Boolean này với các toán tử số học và các toán tử khác, không phải lúc nào cũng rõ ràng khi cần đến dấu ngoặc đơn. Trong thực tế, bạn thường có thể hiểu được rằng trong số các toán tử mà chúng ta đã thấy cho đến nay, `||` có mức độ ưu tiên thấp nhất, sau đó đến `&&`, sau đó đến các toán tử so sánh (`>`, `==`, và vân vân), và sau đó là phần còn lại. Thứ tự này đã được chọn sao cho, trong các biểu thức điển hình như biểu thức sau đây, càng cần ít dấu ngoặc đơn càng tốt:
 
 ```{meta: "expr"}
 1 + 1 == 2 && 10 * 10 > 50
@@ -332,7 +332,7 @@ When mixing these Boolean operators with arithmetic and other operators, it is n
 
 {{index "conditional execution", "ternary operator", "?: operator", "conditional operator", "colon character", "question mark"}}
 
-The last logical operator we will look at is not unary, not binary, but _ternary_, operating on three values. It is written with a question mark and a colon, like this:
+Toán tử logic cuối cùng mà chúng ta sẽ xem xét không phải là toán tử một ngôi, không phải hai ngôi, mà là _ba ngôi_, hoạt động trên ba giá trị. Nó được viết bằng dấu chấm hỏi và dấu hai chấm như thế này:
 
 ```
 console.log(true ? 1 : 2);
@@ -341,23 +341,23 @@ console.log(false ? 1 : 2);
 // → 2
 ```
 
-This one is called the _conditional_ operator (or sometimes just _the ternary operator_ since it is the only such operator in the language). The operator uses the value to the left of the question mark to decide which of the two other values to "pick". If you write `a ? b : c`, the result will be `b` when `a` is true and `c` otherwise.
+Thao tác được gọi là toán tử _điều kiện_ (hoặc đôi khi chỉ là _toán tử ba ngôi_ vì đây là toán tử duy nhất như vậy trong ngôn ngữ). Toán tử sử dụng giá trị ở bên trái dấu chấm hỏi để quyết định "chọn" giá trị nào trong hai giá trị còn lại. Nếu bạn viết `a ? b : c`, kết quả sẽ là `b` khi `a` đúng và `c` ngược lại.
 
-## Empty values
+## Giá trị trống rỗng
 
 {{index undefined, null}}
 
-There are two special values, written `null` and `undefined`, that are used to denote the absence of a _meaningful_ value. They are themselves values, but they carry no information.
+Có hai giá trị đặc biệt, được viết là `null` (vô giá trị) và `undefined` (không xác định), được sử dụng để biểu thị sự vắng mặt của giá trị _có nghĩa_. Bản thân chúng là những giá trị nhưng chúng không mang thông tin.
 
-Many operations in the language that don't produce a meaningful value yield `undefined` simply because they have to yield _some_ value.
+Nhiều thao tác trong ngôn ngữ không tạo ra giá trị có nghĩa trả về `undefined` đơn giản vì chúng phải trả về giá trị _gì đó_.
 
-The difference in meaning between `undefined` and `null` is an accident of JavaScript's design, and it doesn't matter most of the time. In cases where you actually have to concern yourself with these values, I recommend treating them as mostly interchangeable.
+Sự khác biệt về ý nghĩa giữa `undefined` và `null` là một tai nạn tình cờ trong thiết kế của JavaScript và hầu như không đáng để bận tâm. Trong trường hợp bạn thực sự phải quan tâm đến những giá trị này, tôi khuyên bạn nên coi chúng hầu như có thể thay thế cho nhau.
 
-## Automatic type conversion
+## Tự động chuyển đổi kiểu dữ liệu
 
 {{index NaN, "type coercion"}}
 
-In the [introduction](intro), I mentioned that JavaScript goes out of its way to accept almost any program you give it, even programs that do odd things. This is nicely demonstrated by the following expressions:
+Trong phần [giới thiệu](intro), tôi đã đề cập rằng JavaScript không thể chấp nhận hầu hết mọi chương trình bạn cung cấp cho nó, ngay cả những chương trình thực hiện những điều kỳ quặc. Điều này được thể hiện rõ ràng bằng các biểu thức sau:
 
 ```
 console.log(8 * null)
@@ -374,15 +374,15 @@ console.log(false == 0)
 
 {{index "+ operator", arithmetic, "* operator", "- operator"}}
 
-When an operator is applied to the "wrong" type of value, JavaScript will quietly convert that value to the type it needs, using a set of rules that often aren't what you want or expect. This is called _((type coercion))_. The `null` in the first expression becomes `0` and the `"5"` in the second expression becomes `5` (from string to number). Yet in the third expression, `+` tries string concatenation before numeric addition, so the `1` is converted to `"1"` (from number to string).
+Khi một toán tử được áp dụng cho kiểu dữ liệu "sai", JavaScript sẽ lặng lẽ chuyển đổi giá trị đó thành kiểu nó cần, sử dụng một bộ quy tắc thường không phải là điều bạn muốn hoặc mong đợi. Điều này được gọi là _((ép kiểu))_. `null` trong biểu thức đầu tiên trở thành `0` và `"5"` trong biểu thức thứ hai trở thành `5` (từ chuỗi thành số). Tuy nhiên, trong biểu thức thứ ba, `+` thử nối chuỗi trước khi cộng số, do đó `1` được chuyển đổi thành `"1"` (từ số sang chuỗi).
 
 {{index "type coercion", [number, "conversion to"]}}
 
-When something that doesn't map to a number in an obvious way (such as `"five"` or `undefined`) is converted to a number, you get the value `NaN`. Further arithmetic operations on `NaN` keep producing `NaN`, so if you find yourself getting one of those in an unexpected place, look for accidental type conversions.
+Khi một cái gì đó không đối chiếu được tới một số theo cách rõ ràng (chẳng hạn như `"five"` hoặc `undefined`) được chuyển đổi thành một số, bạn sẽ nhận được giá trị `NaN`. Các phép toán số học tiếp theo trên `NaN` tiếp tục tạo ra `NaN`, vì vậy nếu bạn thấy mình nhận được một trong những phép toán đó ở một nơi không mong muốn, hãy tìm tới các chuyển đổi kiểu ngẫu nhiên.
 
 {{index null, undefined, [comparison, "of undefined values"], "== operator"}}
 
-When comparing values of the same type using the `==` operator, the outcome is easy to predict: you should get true when both values are the same, except in the case of `NaN`. But when the types differ, JavaScript uses a complicated and confusing set of rules to determine what to do. In most cases, it just tries to convert one of the values to the other value's type. However, when `null` or `undefined` occurs on either side of the operator, it produces true only if both sides are one of `null` or `undefined`.
+Khi so sánh các giá trị cùng kiểu bằng toán tử `==`, kết quả rất dễ dự đoán: bạn sẽ nhận được giá trị đúng khi cả hai giá trị đều giống nhau, ngoại trừ trường hợp `NaN`. Nhưng khi các kiểu khác nhau, JavaScript sẽ sử dụng một bộ quy tắc phức tạp và khó hiểu để xác định những việc cần làm. Trong hầu hết các trường hợp, nó chỉ cố gắng chuyển đổi một trong các giá trị sang kiểu giá trị khác. Tuy nhiên, khi `null` hoặc `undefined` xảy ra ở một trong hai bên của toán tử, nó chỉ trả về giá trị đúng nếu cả hai bên đều là một trong `null` hoặc `undefined`.
 
 ```
 console.log(null == undefined);
@@ -391,38 +391,38 @@ console.log(null == 0);
 // → false
 ```
 
-That behavior is often useful. When you want to test whether a value has a real value instead of `null` or `undefined`, you can compare it to `null` with the `==` or `!=` operator.
+Hành vi đó thường hữu ích. Khi bạn muốn kiểm tra xem một giá trị mang giá trị thực thay vì `null` hoặc `undefined` hay không, bạn có thể so sánh nó với `null` bằng toán tử `==` hoặc `!=`.
 
 {{index "type coercion", [Boolean, "conversion to"], "=== operator", "!== operator", comparison}}
 
-What if you want to test whether something refers to the precise value `false`? Expressions like `0 == false` and `"" == false` are also true because of automatic type conversion. When you do _not_ want any type conversions to happen, there are two additional operators: `===` and `!==`. The first tests whether a value is _precisely_ equal to the other, and the second tests whether it is not precisely equal. Thus `"" === false` is false, as expected.
+Điều gì sẽ xảy ra nếu bạn muốn kiểm tra xem thứ gì đó có đề cập đến giá trị chính xác `false` hay không? Các biểu thức như `0 == false` và `"" == false` cũng đúng vì chuyển đổi kiểu tự động. Khi bạn _không_ muốn bất kỳ chuyển đổi loại nào xảy ra, có hai toán tử bổ sung: `===` và `!==`. Lần đầu tiên kiểm tra xem một giá trị có _chính xác_ bằng giá trị kia hay không và lần thứ hai kiểm tra xem giá trị đó có bằng chính xác hay không. Do đó `"" === false` là sai, như mong đợi.
 
-I recommend using the three-character comparison operators defensively to prevent unexpected type conversions from tripping you up. But when you're certain the types on both sides will be the same, there is no problem with using the shorter operators.
+Tôi khuyên bạn nên sử dụng toán tử so sánh ba ký tự như một lớp đề phòng tránh việc chuyển đổi kiểu không mong muốn khiến bạn gặp khó khăn. Nhưng khi bạn chắc chắn rằng kiểu ở cả hai bên sẽ giống nhau thì sẽ không có vấn đề gì khi sử dụng các toán tử ngắn hơn.
 
-### Short-circuiting of logical operators
+### Làm ngắn đi mạch toán tử logic
 
 {{index "type coercion", [Boolean, "conversion to"], operator}}
 
-The logical operators `&&` and `||` handle values of different types in a peculiar way. They will convert the value on their left side to Boolean type in order to decide what to do, but depending on the operator and the result of that conversion, they will return either the _original_ left-hand value or the right-hand value.
+Các toán tử logic `&&` và `||` xử lý các giá trị thuộc các kiểu khác nhau theo một cách đặc biệt. Chúng sẽ chuyển đổi giá trị ở bên trái sang loại Boolean để quyết định phải làm gì, nhưng tùy thuộc vào toán tử và kết quả của chuyển đổi đó, chúng sẽ trả về giá trị _ban đầu_ bên trái hoặc giá trị bên phải.
 
 {{index "|| operator"}}
 
-The `||` operator, for example, will return the value to its left when that value can be converted to true and will return the value on its right otherwise. This has the expected effect when the values are Boolean and does something analogous for values of other types.
+Ví dụ, toán tử `||` sẽ trả về giá trị ở bên trái khi giá trị đó có thể được chuyển đổi thành true và nếu không sẽ trả về giá trị ở bên phải. Điều này có tác dụng như mong đợi khi các giá trị là Boolean và thực hiện điều gì đó tương tự đối với các giá trị thuộc kiểu khác.
 
 ```
-console.log(null || "user")
-// → user
-console.log("Agnes" || "user")
-// → Agnes
+console.log(null || "nguoidung")
+// → nguoidung
+console.log("Phong" || "nguoidung")
+// → Phong
 ```
 
 {{index "default value"}}
 
-We can use this functionality as a way to fall back on a default value. If you have a value that might be empty, you can put `||` after it with a replacement value. If the initial value can be converted to false, you'll get the replacement instead. The rules for converting strings and numbers to Boolean values state that `0`, `NaN`, and the empty string (`""`) count as false, while all the other values count as true. That means `0 || -1` produces `-1`, and `"" || "!?"` yields `"!?"`.
+Chúng ta có thể sử dụng chức năng này như một cách để quay lại giá trị mặc định. Nếu bạn có một giá trị có thể trống, bạn có thể đặt `||` sau giá trị đó bằng một giá trị thay thế. Nếu giá trị ban đầu có thể được chuyển đổi thành sai, thay vào đó bạn sẽ nhận được giá trị thay thế. Các quy tắc chuyển đổi chuỗi và số thành giá trị Boolean nêu rõ rằng `0`, `NaN` và chuỗi trống (`""`) được tính là sai, trong khi tất cả các giá trị khác được tính là đúng. Điều đó có nghĩa là `0 || -1` tạo ra `-1` và `"" || "!?"` trả về `"!?"`.
 
 {{index "?? operator", null, undefined}}
 
-The `??` operator resembles `||` but returns the value on the right only if the one on the left is `null` or `undefined`, not if it is some other value that can be converted to `false`. Often, this is preferable to the behavior of `||`.
+Toán tử `??` giống như `||` nhưng chỉ trả về giá trị ở bên phải nếu giá trị ở bên trái là `null` hoặc `undefined`, chứ không trả về giá trị nào khác có thể được chuyển đổi thành `false`. Thông thường, điều này tốt hơn hành vi của `||`.
 
 ```
 console.log(0 || 100);
@@ -435,18 +435,18 @@ console.log(null ?? 100);
 
 {{index "&& operator"}}
 
-The `&&` operator works similarly but the other way around. When the value to its left is something that converts to false, it returns that value, and otherwise it returns the value on its right.
+Toán tử `&&` hoạt động tương tự nhưng ngược lại. Khi giá trị ở bên trái của nó được chuyển thành sai, nó sẽ trả về giá trị đó và nếu không thì nó sẽ trả về giá trị ở bên phải.
 
-Another important property of these two operators is that the part to their right is evaluated only when necessary. In the case of `true || X`, no matter what `X` is—even if it's a piece of program that does something _terrible_—the result will be true, and `X` is never evaluated. The same goes for `false && X`, which is false and will ignore `X`. This is called _((short-circuit evaluation))_.
+Một thuộc tính quan trọng khác của hai toán tử này là phần bên phải của chúng chỉ được xem xét khi cần thiết. Trong trường hợp `true || X`, bất kể `X` là gì—ngay cả khi nó là một phần của chương trình thực hiện điều gì đó _khủng khiếp_—kết quả sẽ đúng và `X` không bao giờ được gọi đến. Điều tương tự cũng xảy ra với `false && X`, là sai và sẽ bỏ qua `X`. Nó được gọi là _((đánh giá ngắn mạch))_.
 
 {{index "ternary operator", "?: operator", "conditional operator"}}
 
-The conditional operator works in a similar way. Of the second and third values, only the one that is selected is evaluated.
+Toán tử điều kiện cũng hoạt động theo cách tương tự. Trong số giá trị thứ hai và thứ ba, chỉ giá trị được chọn mới được đánh giá.
 
-## Summary
+## Tổng kết
 
-We looked at four types of JavaScript values in this chapter: numbers, strings, Booleans, and undefined values. Such values are created by typing in their name (`true`, `null`) or value (`13`, `"abc"`).
+Chúng ta đã xem qua bốn kiểu giá trị JavaScript trong chương này: số, chuỗi, Boolean và giá trị không xác định. Các giá trị như vậy được tạo bằng cách nhập tên của chúng (`true`, `null`) hoặc giá trị (`13`, `"abc"`).
 
-You can combine and transform values with operators. We saw binary operators for arithmetic (`+`, `-`, `*`, `/`, and `%`), string concatenation (`+`), comparison (`==`, `!=`, `===`, `!==`, `<`, `>`, `<=`, `>=`), and logic (`&&`, `||`, `??`), as well as several unary operators (`-` to negate a number, `!` to negate logically, and `typeof` to find a value's type) and a ternary operator (`?:`) to pick one of two values based on a third value.
+Bạn có thể kết hợp và chuyển đổi các giá trị bằng toán tử. Chúng ta đã thấy các toán tử hai ngôi cho số học (`+`, `-`, `*`, `/`, và `%`), nối chuỗi (`+`), so sánh (`==`, `!=`, ` ===`, `!==`, `<`, `>`, `<=`, `>=`), và logic (`&&`, `||`, `??`), đi kèm với một số toán tử một ngôi (`-` để phủ định một số, `!` để phủ định một logic và `typeof` để tìm kiểu giá trị) và toán tử ba ngôi (`?:`) để chọn một trong hai giá trị dựa trên giá trị thứ ba.
 
-This gives you enough information to use JavaScript as a pocket calculator but not much more. The [next chapter](program_structure) will start tying these expressions together into basic programs.
+Trên đây đã cung cấp cho bạn đủ thông tin để sử dụng JavaScript như một máy tính bỏ túi nhưng không nhiều hơn thế. [Chương tiếp theo](program_structure) sẽ bắt đầu liên kết các biểu thức này lại với nhau thành các chương trình cơ bản.
