@@ -15,7 +15,7 @@ Trong chương này, chúng ta sẽ bắt đầu làm những việc thực sự
 
 {{index grammar, [syntax, expression], [code, "structure of"], grammar, [JavaScript, syntax]}}
 
-Trong [Chương ?](values), chúng tôi đã tạo ra các giá trị và áp dụng các toán tử vào chúng để có được các giá trị mới. Việc tạo ra các giá trị như thế này là bản chất chính của bất kỳ chương trình JavaScript nào. Nhưng bản chất đó phải được đóng khung trong một cấu trúc lớn hơn để có ích. Đó là những gì chúng ta sẽ đề cập trong chương này.
+Trong [Chapter ?](values), chúng tôi đã tạo ra các giá trị và áp dụng các toán tử vào chúng để có được các giá trị mới. Việc tạo ra các giá trị như thế này là bản chất chính của bất kỳ chương trình JavaScript nào. Nhưng bản chất đó phải được đóng khung trong một cấu trúc lớn hơn để có ích. Đó là những gì chúng ta sẽ đề cập trong chương này.
 
 {{index "literal expression", [parentheses, expression]}}
 
