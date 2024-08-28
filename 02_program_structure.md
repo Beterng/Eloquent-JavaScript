@@ -2,29 +2,28 @@
 
 {{quote {author: "_why", title: "Why's (Poignant) Guide to Ruby", chapter: true}
 
-And my heart glows bright red under my filmy, translucent skin and they have to administer 10cc of JavaScript to get me to come back. (I respond well to toxins in the blood.) Man, that stuff will kick the peaches right out your gills!
-
+Và trái tim tôi sáng rực màu đỏ dưới lớp da mỏng, trong suốt của tôi và họ phải tiêm 10cc JavaScript để khiến tôi quay lại. (Tôi phản ứng tốt với độc tố trong máu.) Trời ơi, thứ đó sẽ đá bay quả đào ra khỏi mang của bạn mất!
 quote}}
 
 {{index why, "Poignant Guide"}}
 
 {{figure {url: "img/chapter_picture_2.jpg", alt: "Illustration showing a number of tentacles holding chess pieces", chapter: framed}}}
 
-In this chapter, we will start to do things that can actually be called _programming_. We will expand our command of the JavaScript language beyond the nouns and sentence fragments we've seen so far to the point where we can express meaningful prose.
+Trong chương này, chúng ta sẽ bắt đầu làm những việc thực sự có thể được gọi là _lập trình_. Chúng ta sẽ mở rộng khả năng sử dụng ngôn ngữ JavaScript vượt ra ngoài các danh từ và các đoạn câu mà chúng ta đã thấy cho đến thời điểm chúng ta có thể diễn đạt bằng văn xuôi có ý nghĩa.
 
 ## Expressions and statements
 
 {{index grammar, [syntax, expression], [code, "structure of"], grammar, [JavaScript, syntax]}}
 
-In [Chapter ?](values), we made values and applied operators to them to get new values. Creating values like this is the main substance of any JavaScript program. But that substance has to be framed in a larger structure to be useful. That's what we'll cover in this chapter.
+Trong [Chương ?](values), chúng tôi đã tạo ra các giá trị và áp dụng các toán tử vào chúng để có được các giá trị mới. Việc tạo ra các giá trị như thế này là bản chất chính của bất kỳ chương trình JavaScript nào. Nhưng bản chất đó phải được đóng khung trong một cấu trúc lớn hơn để có ích. Đó là những gì chúng ta sẽ đề cập trong chương này.
 
 {{index "literal expression", [parentheses, expression]}}
 
-A fragment of code that produces a value is called an _((expression))_. Every value that is written literally (such as `22` or `"psychoanalysis"`) is an expression. An expression between parentheses is also an expression, as is a ((binary operator)) applied to two expressions or a ((unary operator)) applied to one.
+Một đoạn mã tạo ra một giá trị được gọi là _((biểu thức))_. Mỗi giá trị được viết theo nghĩa đen (như `22` hoặc `"psychoanalysis"`) là một biểu thức. Một biểu thức giữa các dấu ngoặc đơn cũng là một biểu thức, cũng như một ((toán tử nhị phân)) được áp dụng cho hai biểu thức hoặc một ((toán tử đơn)) được áp dụng cho một biểu thức.
 
 {{index [nesting, "of expressions"], "human language"}}
 
-This shows part of the beauty of a language-based interface. Expressions can contain other expressions in a way similar to how subsentences in human languages are nested—a subsentence can contain its own subsentences, and so on. This allows us to build expressions that describe arbitrarily complex computations.
+Điều này cho thấy một phần vẻ đẹp của giao diện dựa trên ngôn ngữ. Biểu thức có thể chứa các biểu thức khác theo cách tương tự như cách các câu phụ trong ngôn ngữ của con người được lồng vào nhau—một câu phụ có thể chứa các câu phụ của riêng nó, v.v.. Điều này cho phép chúng ta xây dựng các biểu thức mô tả các phép tính phức tạp tùy ý.
 
 {{index statement, semicolon, program}}
 
