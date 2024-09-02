@@ -20,3 +20,6 @@ Chủ nhân gốc của kho lưu trữ này chỉ cung cấp một cách để c
 
     apt-get install texlive texlive-xetex fonts-inconsolata fonts-symbola texlive-lang-chinese inkscape
     make book.pdf
+
+# Giấy phép
+Được cấp phép theo MIT Licence📄
