@@ -1,4 +1,4 @@
-# Program Structure
+# Cấu trúc chương trình
 
 {{quote {author: "_why", title: "Why's (Poignant) Guide to Ruby", chapter: true}
 
@@ -7,11 +7,11 @@ quote}}
 
 {{index why, "Poignant Guide"}}
 
-{{figure {url: "img/chapter_picture_2.jpg", alt: "Illustration showing a number of tentacles holding chess pieces", chapter: framed}}}
+{{figure {url: "img/chapter_picture_2.jpg", alt: "Hình minh họa cho thấy một số xúc tu đang giữ các quân cờ", chapter: framed}}}
 
 Trong chương này, chúng ta sẽ bắt đầu làm những việc thực sự có thể được gọi là _lập trình_. Chúng ta sẽ mở rộng khả năng sử dụng ngôn ngữ JavaScript vượt ra ngoài các danh từ và các đoạn câu mà chúng ta đã thấy cho đến thời điểm chúng ta có thể diễn đạt bằng văn xuôi có ý nghĩa.
 
-## Expressions and statements
+## Biểu thức và câu lệnh~
 
 {{index grammar, [syntax, expression], [code, "structure of"], grammar, [JavaScript, syntax]}}
 
@@ -19,7 +19,7 @@ Trong [Chapter ?](values), chúng tôi đã tạo ra các giá trị và áp d�
 
 {{index "literal expression", [parentheses, expression]}}
 
-Một đoạn mã tạo ra một giá trị được gọi là _((biểu thức))_. Mỗi giá trị được viết theo nghĩa đen (như `22` hoặc `"psychoanalysis"`) là một biểu thức. Một biểu thức giữa các dấu ngoặc đơn cũng là một biểu thức, cũng như một ((toán tử nhị phân)) được áp dụng cho hai biểu thức hoặc một ((toán tử đơn)) được áp dụng cho một biểu thức.
+Một đoạn mã tạo ra một giá trị được gọi là _((biểu thức))_. Mỗi giá trị được viết theo nghĩa đen (như `22` hoặc `"phân tích tâm lý"`) là một biểu thức. Một biểu thức giữa các dấu ngoặc đơn cũng là một biểu thức, cũng như một ((toán tử nhị phân)) được áp dụng cho hai biểu thức hoặc một ((toán tử đơn)) được áp dụng cho một biểu thức.
 
 {{index [nesting, "of expressions"], "human language"}}
 
@@ -27,29 +27,29 @@ Một đoạn mã tạo ra một giá trị được gọi là _((biểu thức)
 
 {{index statement, semicolon, program}}
 
-If an expression corresponds to a sentence fragment, a JavaScript _statement_ corresponds to a full sentence. A program is a list of statements.
+Nếu một biểu thức tương ứng với một đoạn câu, thì _câu lệnh_ JavaScript tương ứng với một câu đầy đủ. Một chương trình là một danh sách các câu lệnh.
 
 {{index [syntax, statement]}}
 
-The simplest kind of statement is an expression with a semicolon after it. This is a program:
+Loại câu lệnh đơn giản là một biểu thức có dấu chấm phẩy theo sau. Đây là một chương trình:
 
 ```
 1;
 !false;
 ```
 
-It is a useless program, though. An ((expression)) can be content to just produce a value, which can then be used by the enclosing code. However, a ((statement)) stands on its own, so if it doesn't affect the world, it's useless. It may display something on the screen, as with `console.log`, or change the state of the machine in a way that will affect the statements that come after it. These changes are called _((side effect))s_. The statements in the previous example just produce the values `1` and `true` and then immediately throw them away. This leaves no impression on the world at all. When you run this program, nothing observable happens.
+Tuy nhiên, đây là một chương trình vô dụng. Một ((biểu thức)) có thể chỉ tạo ra một giá trị, sau đó có thể được sử dụng bởi mã bao quanh. Mặt khác, một ((câu lệnh)) đứng riêng mà nó không ảnh hưởng đến thế giới, thì nó vô dụng. Nó có thể hiển thị một cái gì đó trên màn hình, như với `console.log`, hoặc thay đổi trạng thái của máy theo cách sẽ ảnh hưởng đến các câu lệnh theo sau nó. Những thay đổi này được gọi là _((tác dụng phụ))_. Các câu lệnh trong ví dụ trước chỉ tạo ra các giá trị `1` và `true` rồi ngay lập tức loại bỏ chúng. Điều này không để lại ấn tượng gì cho thế giới cả. Khi bạn chạy chương trình này, không có gì có thể quan sát được xảy ra.
 
 {{index "programming style", "automatic semicolon insertion", semicolon}}
 
-In some cases, JavaScript allows you to omit the semicolon at the end of a statement. In other cases, it has to be there, or the next ((line)) will be treated as part of the same statement. The rules for when it can be safely omitted are somewhat complex and error prone. So in this book, every statement that needs a semicolon will always get one. I recommend you do the same, at least until you've learned more about the subtleties of missing semicolons.
+Trong một số trường hợp, JavaScript cho phép bạn bỏ dấu chấm phẩy ở cuối câu lệnh. Trong những trường hợp khác, bạn phải bỏ dấu chấm phẩy, nếu không ((dòng)) tiếp theo sẽ được coi là một phần của cùng một câu lệnh. Các quy tắc về thời điểm có thể bỏ dấu chấm phẩy một cách an toàn khá phức tạp và dễ gây lỗi. Vì vậy, trong cuốn sách này, mọi câu lệnh cần dấu chấm phẩy sẽ luôn có dấu chấm phẩy. Tôi khuyên bạn nên làm như vậy, ít nhất là cho đến khi bạn tìm hiểu thêm về sự tinh tế của việc thiếu dấu chấm phẩy.
 
-## Bindings
+## Liên kết
 
 {{indexsee variable, binding}}
 {{index [syntax, statement], [binding, definition], "side effect", [memory, organization], [state, in binding]}}
 
-How does a program keep an internal state? How does it remember things? We have seen how to produce new values from old values, but this does not change the old values, and the new value must be used immediately or it will dissipate again. To catch and hold values, JavaScript provides a thing called a _binding_, or _variable_.
+Làm thế nào để một chương trình duy trì trạng thái bên trong? Làm thế nào để nó ghi nhớ mọi thứ? Chúng ta đã thấy cách tạo ra các giá trị mới từ các giá trị cũ, nhưng điều này không thay đổi các giá trị cũ và giá trị mới phải được sử dụng ngay lập tức nếu không nó sẽ lại biến mất. Để bắt và giữ các giá trị, JavaScript cung cấp một thứ gọi là _binding (liên kết)_  hoặc _variable (biến)_. 
 
 ```
 let caught = 5 * 5;
@@ -57,11 +57,11 @@ let caught = 5 * 5;
 
 {{index "let keyword"}}
 
-That gives us a second kind of ((statement)). The special word (_((keyword))_) `let` indicates that this sentence is going to define a binding. It is followed by the name of the binding and, if we want to immediately give it a value, by an `=` operator and an expression.
+Điều đó cung cấp cho chúng ta một loại ((câu lệnh)) thứ hai. Từ đặc biệt (_((từ khóa))_) `let` chỉ ra rằng câu này sẽ định nghĩa một ràng buộc. Nó được theo sau bởi tên của ràng buộc và nếu chúng ta muốn cung cấp cho nó một giá trị ngay lập tức sẽ thể hiện bằng toán tử `=` và một biểu thức.
 
-The example creates a binding called `caught` and uses it to grab hold of the number that is produced by multiplying 5 by 5.
+Ví dụ tạo ra một ràng buộc có tên là `caught` và sử dụng nó để nắm giữ số được tạo ra bằng cách nhân 5 với 5.
 
-After a binding has been defined, its name can be used as an ((expression)). The value of such an expression is the value the binding currently holds. Here's an example:
+Sau khi ràng buộc được định nghĩa, tên của nó có thể được sử dụng như một ((biểu thức)). Giá trị của một biểu thức như vậy sẽ là giá trị mà ràng buộc hiện đang giữ. Sau đây là một ví dụ:
 
 ```
 let ten = 10;
@@ -71,7 +71,7 @@ console.log(ten * ten);
 
 {{index "= operator", assignment, [binding, assignment]}}
 
-When a binding points at a value, that does not mean it is tied to that value forever. The `=` operator can be used at any time on existing bindings to disconnect them from their current value and have them point to a new one:
+Khi một ràng buộc trỏ đến một giá trị, điều đó không có nghĩa là nó bị ràng buộc với giá trị đó mãi mãi. Toán tử `=` có thể được sử dụng bất kỳ lúc nào trên các ràng buộc hiện có để ngắt kết nối chúng khỏi giá trị hiện tại của chúng và để chúng trỏ đến một giá trị mới:
 
 ```
 let mood = "light";
@@ -84,9 +84,9 @@ console.log(mood);
 
 {{index [binding, "model of"], "tentacle (analogy)"}}
 
-You should imagine bindings as tentacles rather than boxes. They do not _contain_ values; they _grasp_ them—two bindings can refer to the same value. A program can access only the values to which it still has a reference. When you need to remember something, you either grow a tentacle to hold on to it or reattach one of your existing tentacles to it.
+Bạn nên tưởng tượng các ràng buộc như các xúc tu hơn là các hộp. Chúng không _chứa_ các giá trị; chúng _nắm bắt_ các giá trị đó và có thể có hai ràng buộc cùng tham chiếu đến một giá trị. Một chương trình chỉ có thể truy cập các giá trị mà nó vẫn còn tham chiếu. Khi bạn cần nhớ một điều gì đó, bạn có thể mọc một xúc tu để giữ lại nó hoặc gắn lại một trong những xúc tu hiện có của bạn vào nó.
 
-Let's look at another example. To remember the number of dollars that Luigi still owes you, you create a binding. When he pays back $35, you give this binding a new value.
+Hãy xem một ví dụ khác. Để nhớ số đô la mà Luigi vẫn nợ bạn, bạn tạo một ràng buộc. Khi anh ta trả lại 35$ đô, bạn sẽ gán cho ràng buộc này một giá trị mới.
 
 ```
 let luigisDebt = 140;
@@ -97,11 +97,11 @@ console.log(luigisDebt);
 
 {{index undefined}}
 
-When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you'll get the value `undefined`.
+Khi bạn định nghĩa một ràng buộc mà không cho nó một giá trị, xúc tu không có gì để nắm bắt, nó sẽ kết thúc trong không khí loãng. Và nếu bạn yêu cầu giá trị của một ràng buộc rỗng, bạn sẽ nhận được giá trị `undefined` (tạm dịch: `không xác định`).
 
 {{index "let keyword"}}
 
-A single `let` statement may define multiple bindings. The definitions must be separated by commas:
+Một câu lệnh `let` có thể định nghĩa nhiều ràng buộc. Các định nghĩa phải được phân tách bằng dấu phẩy:
 
 ```
 let one = 1, two = 2;
@@ -109,7 +109,7 @@ console.log(one + two);
 // → 3
 ```
 
-The words `var` and `const` can also be used to create bindings, in a similar fashion to `let`.
+Các từ `var` và `const` cũng có thể được sử dụng để tạo ràng buộc, tương tự như `let`.
 
 ```
 var name = "Ayda";
@@ -120,21 +120,21 @@ console.log(greeting + name);
 
 {{index "var keyword"}}
 
-The first of these, `var` (short for "variable"), is the way bindings were declared in pre-2015 JavaScript, when `let` didn't exist yet. I'll get back to the precise way it differs from `let` in the [next chapter](functions). For now, remember that it mostly does the same thing, but we'll rarely use it in this book because it behaves oddly in some situations.
+Đầu tiên trong số này, `var` (viết tắt của "variable"), là cách các ràng buộc được khai báo trong JavaScript trước năm 2015, khi `let` vẫn chưa tồn tại. Tôi sẽ quay lại cách chính xác mà nó khác với `let` trong [chương tiếp theo](functions). Hiện tại, hãy nhớ rằng nó chủ yếu thực hiện cùng một việc, nhưng chúng ta sẽ hiếm khi sử dụng nó trong cuốn sách này vì nó hoạt động kỳ lạ trong một số tình huống.
 
 {{index "const keyword", naming}}
 
-The word `const` stands for _((constant))_. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that just give a name to a value so that you can easily refer to it later.
+Từ `const` là viết tắt của _((hằng số))_. Nó định nghĩa một ràng buộc hằng số, trỏ đến cùng một giá trị trong suốt thời gian tồn tại của nó. Điều này hữu ích cho các ràng buộc chỉ đặt tên cho một giá trị để bạn có thể dễ dàng tham chiếu đến nó sau này.
 
-## Binding names
+## Tên ràng buộc
 
 {{index "underscore character", "dollar sign", [binding, naming]}}
 
-Binding names can be any sequence of one or more letters. Digits can be part of binding names—`catch22` is a valid name, for example—but the name must not start with a digit. A binding name may include dollar signs (`$`) or underscores (`_`) but no other punctuation or special characters.
+Tên ràng buộc có thể là bất kỳ chuỗi nào gồm một hoặc nhiều chữ cái. Các chữ số có thể là một phần của tên ràng buộc—ví dụ, `catch22` là một tên hợp lệ—nhưng tên không được bắt đầu bằng một chữ số. Tên ràng buộc có thể bao gồm các dấu đô la (`$`) hoặc dấu gạch dưới (`_`) nhưng không có dấu chấm câu hoặc ký tự đặc biệt nào khác.
 
 {{index [syntax, identifier], "implements (reserved word)", "interface (reserved word)", "package (reserved word)", "private (reserved word)", "protected (reserved word)", "public (reserved word)", "static (reserved word)", "void operator", "yield (reserved word)", "enum (reserved word)", "reserved word", [binding, naming]}}
 
-Words with a special meaning, such as `let`, are _((keyword))s_, and may not be used as binding names. There are also a number of words that are "reserved for use" in ((future)) versions of JavaScript, which also can't be used as binding names. The full list of keywords and reserved words is rather long:
+Các từ có ý nghĩa đặc biệt, chẳng hạn như `let`, là một _((từ khóa))_, nên ta không được sử dụng làm tên ràng buộc. Ngoài ra còn có một số từ được "dành riêng để sử dụng" trong các phiên bản ((tương lai)) của JavaScript, cũng không thể sử dụng làm tên ràng buộc. Danh sách đầy đủ các từ khóa và từ dành riêng khá dài:
 
 ```{lang: "null"}
 break case catch class const continue debugger default
@@ -146,13 +146,13 @@ switch this throw true try typeof var void while with yield
 
 {{index [syntax, error]}}
 
-Don't worry about memorizing this list. When creating a binding produces an unexpected syntax error, check whether you're trying to define a reserved word.
+Đừng lo lắng về việc ghi nhớ danh sách này. Khi việc tạo ràng buộc tạo ra lỗi cú pháp không mong muốn, hãy kiểm tra xem bạn có đang cố gắng định nghĩa một từ dành riêng hay không.
 
-## The environment
+## Môi trường
 
 {{index "standard environment", [browser, environment]}}
 
-The collection of bindings and their values that exist at a given time is called the _((environment))_. When a program starts up, this environment is not empty. It always contains bindings that are part of the language ((standard)), and most of the time, it also has bindings that provide ways to interact with the surrounding system. For example, in a browser, there are functions to interact with the currently loaded website and to read ((mouse)) and ((keyboard)) input.
+Bộ sưu tập các ràng buộc và giá trị của chúng tồn tại tại một thời điểm nhất định được gọi là _((môi trường))_. Khi một chương trình khởi động, môi trường này không trống rỗng. Nó luôn chứa các ràng buộc là một phần của ngôn ngữ ((chuẩn)), và hầu hết thời gian, nó cũng có các ràng buộc cung cấp các cách để tương tác với hệ thống xung quanh. Ví dụ, trong trình duyệt, có các hàm để tương tác với trang web hiện đang tải và để đọc đầu vào ((chuột)) và ((bàn phím)).
 
 ## Functions
 
@@ -161,21 +161,21 @@ The collection of bindings and their values that exist at a given time is called
 {{indexsee "calling (of functions)", [function, application]}}
 {{index output, function, [function, application], [browser, environment]}}
 
-A lot of the values provided in the default environment have the type _((function))_. A function is a piece of program wrapped in a value. Such values can be _applied_ in order to run the wrapped program. For example, in a browser environment, the binding `prompt` holds a function that shows a little ((dialog)) asking for user input. It is used like this:
+Rất nhiều giá trị được cung cấp trong môi trường mặc định có kiểu _((function))_ (tạm dịch: __chức năng__). Một hàm là một phần của chương trình được gói trong một giá trị. Các giá trị như vậy có thể được _áp dụng_ để chạy chương trình được gói. Ví dụ, trong môi trường trình duyệt, ràng buộc `prompt` giữ một hàm hiển thị một ((hộp thoại)) nhỏ yêu cầu người dùng nhập dữ liệu. Nó được sử dụng như thế này:
 
 ```
 prompt("Enter passcode");
 ```
 
-{{figure {url: "img/prompt.png", alt: "A prompt dialog that says 'enter passcode'", width: "8cm"}}}
+{{figure {url: "img/prompt.png", alt: "Một hộp thoại nhắc nhở nói rằng 'Hãy điền mật mã'", width: "8cm"}}}
 
 {{index parameter, [function, application], [parentheses, arguments]}}
 
-Executing a function is called _invoking_, _calling_, or _applying_ it. You can call a function by putting parentheses after an expression that produces a function value. Usually you'll directly use the name of the binding that holds the function. The values between the parentheses are given to the program inside the function. In the example, the `prompt` function uses the string that we give it as the text to show in the dialog box. Values given to functions are called _((argument))s_. Different functions might need a different number or different types of arguments.
+Thực thi một hàm được gọi là _invoking_, _calling_ hoặc _applying_ hàm đó. Bạn có thể gọi một hàm bằng cách đặt dấu ngoặc đơn sau một biểu thức tạo ra giá trị hàm. Thông thường, bạn sẽ trực tiếp sử dụng tên của ràng buộc giữ hàm. Các giá trị giữa dấu ngoặc đơn được cung cấp cho chương trình bên trong hàm. Trong ví dụ, hàm `prompt` sử dụng chuỗi mà chúng ta cung cấp cho nó làm văn bản để hiển thị trong hộp thoại. Các giá trị được cung cấp cho hàm được gọi là _((argument))s_. Các hàm khác nhau có thể cần số lượng hoặc loại đối số khác nhau.
 
-The `prompt` function isn't used much in modern web programming, mostly because you have no control over the way the resulting dialog looks, but it can be helpful in toy programs and experiments.
+Hàm `prompt` không được sử dụng nhiều trong lập trình web hiện đại, chủ yếu là vì bạn không thể kiểm soát được giao diện của hộp thoại kết quả, nhưng nó có thể hữu ích trong các chương trình đồ chơi và thử nghiệm.
 
-## The console.log function
+## Hàm console.log
 
 {{index "JavaScript console", "developer tools", "Node.js", "console.log", output, [browser, environment]}}
 
