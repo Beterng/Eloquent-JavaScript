@@ -183,12 +183,12 @@ In the examples, I used `console.log` to output values. Most JavaScript systems 
 
 {{if interactive
 
-When running the examples (or your own code) on the pages of this book, `console.log` output will be shown after the example, instead of in the browser's JavaScript console.
+Khi chạy các ví dụ (hoặc mã code của riêng bạn) trên các trang của cuốn sách này, đầu ra `console.log` sẽ được hiển thị sau ví dụ, thay vì trong bảng điều khiển JavaScript của trình duyệt.
 
 ```
 let x = 30;
-console.log("the value of x is", x);
-// → the value of x is 30
+console.log("Giá trị của x là", x);
+// → Giá trị của x là 30
 ```
 
 if}}
