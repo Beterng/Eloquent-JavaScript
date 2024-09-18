@@ -1,4 +1,4 @@
-# JavaScript and the Browser
+# JavaScript và Trình duyệt
 
 {{quote {author: "Tim Berners-Lee", title: "The World Wide Web: A Very Short Personal Pistory", chapter: true}
 

@@ -1,4 +1,4 @@
-# Program Structure
+# Cấu trúc Chương trình
 
 {{quote {author: "_why", title: "Why's (Poignant) Guide to Ruby", chapter: true}
 

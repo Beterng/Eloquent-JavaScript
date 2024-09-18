@@ -1,6 +1,6 @@
 {{meta {docid: values}}}
 
-# Values, Types, and Operators
+# Giá trị, Kiểu và Toán tử
 
 {{quote {author: "Master Yuan-Ma", title: "The Book of Programming", chapter: true}
 

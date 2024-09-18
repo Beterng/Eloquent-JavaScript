@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/hangar2.js", "code/chapter/11_async.js"], zip: "node/html"}}}
 
-# Asynchronous Programming
+# Lập trình Bất đồng bộ
 
 {{quote {author: "Laozi", title: "Tao Te Ching", chapter: true}
 

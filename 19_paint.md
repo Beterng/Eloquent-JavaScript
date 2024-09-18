@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/19_paint.js"], zip: "html include=[\"css/paint.css\"]"}}}
 
-# Project: A Pixel Art Editor
+# Dự án: Trình chỉnh sửa Pixel Art
 
 {{quote {author: "Joan Miró", chapter: true}
 

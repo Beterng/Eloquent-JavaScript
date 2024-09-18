@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/scripts.js", "code/chapter/05_higher_order.js", "code/intro.js"], zip: "node/html"}}}
 
-# Higher-Order Functions
+# Hàm bậc cao
 
 {{quote {author: "C.A.R. Hoare", title: "1980 ACM Turing Award Lecture", chapter: true}
 

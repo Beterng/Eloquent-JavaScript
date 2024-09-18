@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/packages_chapter_10.js", "code/chapter/07_robot.js"]}}}
 
-# Modules
+# Mô-đun
 
 {{quote {author: "Tef", title: "programming is terrible", chapter: true}
 

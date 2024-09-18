@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/06_object.js"], zip: "node/html"}}}
 
-# The Secret Life of Objects
+# Cuộc sống bí mật của Đối tượng
 
 {{quote {author: "Barbara Liskov", title: "Programming with Abstract Data Types", chapter: true}
 

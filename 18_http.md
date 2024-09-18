@@ -1,6 +1,6 @@
 {{meta {}}}
 
-# HTTP and Forms
+# HTTP và Biểu mẫu
 
 {{quote {author: "Tim Berners-Lee", chapter: true}
 

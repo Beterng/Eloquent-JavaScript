@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/07_robot.js", "code/animatevillage.js"], zip: html}}}
 
-# Project: A Robot
+# Dự án: Một con Robot
 
 {{quote {author: "Edsger Dijkstra", title: "The Threats to Computing Science", chapter: true}
 

@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/12_language.js"], zip: "node/html"}}}
 
-# Project: A Programming Language
+# Dự án: Một ngôn ngữ lập trình
 
 {{quote {author: "Hal Abelson and Gerald Sussman", title: "Structure and Interpretation of Computer Programs", chapter: true}
 

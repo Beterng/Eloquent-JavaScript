@@ -1,4 +1,4 @@
-# Functions
+# Hàm
 
 {{quote {author: "Donald Knuth", chapter: true}
 

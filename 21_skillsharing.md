@@ -1,6 +1,6 @@
 {{meta {code_links: ["code/skillsharing.zip"]}}}
 
-# Project: Skill-Sharing Website
+# Dự án: Trang Web chia sẻ kinh nghiệm
 
 {{quote {author: "Margaret Fuller", chapter: true}
 

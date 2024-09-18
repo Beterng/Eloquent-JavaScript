@@ -1,4 +1,4 @@
-# The Document Object Model
+# Mô hình Đối tượng Tài liệu
 
 {{quote {author: "Friedrich Nietzsche", title: "Beyond Good and Evil", chapter: true}
 

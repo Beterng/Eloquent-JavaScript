@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/08_error.js"]}}}
 
-# Bugs and Errors
+# Lỗi và Sai sót
 
 {{quote {author: "Brian Kernighan and P.J. Plauger", title: "The Elements of Programming Style", chapter: true}
 

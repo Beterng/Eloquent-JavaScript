@@ -1,6 +1,6 @@
 {{meta {load_files: ["code/chapter/16_game.js", "code/levels.js", "code/_stop_keys.js"], zip: "html include=[\"css/game.css\"]"}}}
 
-# Project: A Platform Game
+# Dự án: Một trò chơi đi cảnh
 
 {{quote {author: "Iain Banks", title: "The Player of Games", chapter: true}
 
