@@ -164,7 +164,7 @@ Bộ sưu tập các ràng buộc và giá trị của chúng tồn tại tại 
 Rất nhiều giá trị được cung cấp trong môi trường mặc định có kiểu _((function))_ (tạm dịch: __chức năng__). Một hàm là một phần của chương trình được gói trong một giá trị. Các giá trị như vậy có thể được _áp dụng_ để chạy chương trình được gói. Ví dụ, trong môi trường trình duyệt, ràng buộc `prompt` giữ một hàm hiển thị một ((hộp thoại)) nhỏ yêu cầu người dùng nhập dữ liệu. Nó được sử dụng như thế này:
 
 ```
-prompt("Enter passcode");
+prompt("Hãy điền mật mã");
 ```
 
 {{figure {url: "img/prompt.png", alt: "Một hộp thoại nhắc nhở nói rằng 'Hãy điền mật mã'", width: "8cm"}}}
@@ -179,7 +179,7 @@ Hàm `prompt` không được sử dụng nhiều trong lập trình web hiện 
 
 {{index "JavaScript console", "developer tools", "Node.js", "console.log", output, [browser, environment]}}
 
-In the examples, I used `console.log` to output values. Most JavaScript systems (including all modern web browsers and Node.js) provide a `console.log` function that writes out its arguments to _some_ text output device. In browsers, the output lands in the ((JavaScript console)). This part of the browser interface is hidden by default, but most browsers open it when you press F12 or, on a Mac, [command]{keyname}-[option]{keyname}-I. If that does not work, search through the menus for an item named Developer Tools or similar.
+Trong ví dụ này, tôi sử dụng `console.log` để xuất giá trị. Hầu hết các hệ thống JavaScript (bao gồm tất cả các trình duyệt web hiện đại và Node.js) cung cấp hàm `console.log` that writes out its arguments to _some_ text output device. In browsers, the output lands in the ((JavaScript console)). This part of the browser interface is hidden by default, but most browsers open it when you press F12 or, on a Mac, [command]{keyname}-[option]{keyname}-I. If that does not work, search through the menus for an item named Developer Tools or similar.
 
 {{if interactive
 
