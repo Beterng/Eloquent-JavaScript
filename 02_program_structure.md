@@ -195,7 +195,7 @@ if}}
 
 {{index [object, property], [property, access]}}
 
-Though binding names cannot contain ((period character))s, `console.log` does have one. This is because `console.log` isn't a simple binding, but an expression that retrieves the `log` property from the value held by the `console` binding. We'll find out exactly what this means in [Chapter ?](data#properties).
+Mặc dù tên ràng buộc không thể chứa ((ký tự dấu chấm)), nhưng `console.log` có một. Điều này là do `console.log` không phải là một ràng buộc đơn giản, mà là một biểu thức truy xuất thuộc tính `log` từ giá trị được giữ bởi ràng buộc `console`. Chúng ta sẽ tìm hiểu chính xác điều này có nghĩa là gì trong [Chapter ?](data#properties).
 
 {{id return_values}}
 ## Return values
